@@ -40,28 +40,29 @@ angular
 
     })
 
-    .config(function ($routeProvider) {
+    .config(function ($routeProvider, $locationProvider) {
         $routeProvider
-            .when('/', {
-                templateUrl: 'views/matchmaker/index.html',
-                controller: 'MatchmakerIndexCtrl',
-                controllerAs: 'matchmaker'
+            .when('/about', {
+                templateUrl: 'views/about.html',
+                controller: 'AboutCtrl',
+                controllerAs: 'about'
             })
             .when('/:work/:version?', {
                 templateUrl: 'views/matchmaker/work.html',
                 controller: 'MatchmakerWorkCtrl',
                 controllerAs: 'matchmaker'
             })
-            .when('/about', {
-                templateUrl: 'views/about.html',
-                controller: 'AboutCtrl',
-                controllerAs: 'about'
+            .when('/', {
+                templateUrl: 'views/matchmaker/index.html',
+                controller: 'MatchmakerIndexCtrl',
+                controllerAs: 'matchmaker'
             })
             .otherwise({
                 redirectTo: '/'
             })
 
-        })
+            $locationProvider.html5Mode(true);
+    })
 
     .directive('navMenu', function ($location) {
         return function (scope, element, attrs) {
