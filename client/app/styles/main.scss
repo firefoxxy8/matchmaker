@@ -1,0 +1,199 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.heading {
+  background: lightgray;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 0;
+}
+.verse {
+  margin: 6px 6px 6px 0;
+  cursor: pointer;
+}
+
+.vertical-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: baseline;
+}
+
+.quote-count {
+  margin: 0 6px 0 0;
+  padding: 0;
+}
+
+.modal {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.4em;
+    }
+    pre {
+        font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+        font-size: 0.8em;
+    }
+  .modal {
+    width: 100%;
+  }
+}
+
+/*.modal-content {
+  width: 100%;
+}
+.modal-header, .modal-body {
+  outline: none;
+  width: 100%;
+}*/
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 2.0em;
+    }
+    pre {
+        font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+        font-size: 1.0em;
+    }
+    .modal {
+      top: 5%;
+      /*left: 50%;*/
+      width: 100%;
+      /*margin-left:auto;
+      margin-right:auto;*/
+    }
+    .modal-backdrop.in {
+      opacity: 0;
+    }
+}
+
+.snippet em {
+  background: #FFFF99;
+}
+
+.highlight {
+  background: yellow;
+}
+
+.entity {
+  cursor: pointer;
+}
+.entity:hover {
+  background: lightgrey;
+}
+
+.inset p {
+    margin-left: 1.5em;
+    font-weight: 300 !important;
+    line-height: 0.9 !important;
+    font-size: .875em !important;
+}
+
+.snippet-item~.snippet-item:before {
+    content: "";
+    display: block;
+    height: 1px;
+    /*width: 90%;*/
+    margin-left: 2.2em;
+    margin-right: 1.5em;
+    background: #b1b1b1;
+}

@@ -1,0 +1,33 @@
+{
+  "works": [
+    {
+      "id": "the_divine_comedy",
+      "title": "The Divine Comedy",
+      "author": "Dante Alighieri",
+      "versions": [
+        {
+          "id": "italian",
+          "label": "Gutenberg Italian",
+          "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_italian.textile"
+        },
+        {
+          "id": "longfellow",
+          "label": "Gutenberg English (Longfellow)",
+          "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_longfellow.textile",
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "constitution_para",
+      "title": "The United States Constitution",
+      "versions": [
+        {
+          "id": "default",
+          "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution.textile",
+          "default": true
+        }
+      ]
+    }
+  ]
+}
