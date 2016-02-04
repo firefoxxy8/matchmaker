@@ -40,12 +40,97 @@ angular.module('matchmakerApp')
 
     })
 
-    .controller('MatchmakerWorkCtrl', function ($routeParams, $q, $scope, $rootScope, $window, MatchmakerText, QuoteCountsAPI, MatchDataSOLR, JWTToken, $uibModal, $log) {
+    .controller('MatchmakerWorkCtrl', function ($routeParams, $q, $scope, $rootScope, $window, MatchmakerText, QuoteCountsAPI, MatchDataSOLR, MatchmakerIndex, JWTToken, $uibModal, $log) {
         this.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',
             'Karma'
         ];
+
+        $scope.root = {};
+        $scope.articles = [];
+        $scope.selectedChunk = '';
+
+        $scope.getWorkTextAndCounts = function(workID, workURL) {
+            $q.all([
+                QuoteCountsAPI.getCounts(workID),
+                MatchmakerText.getText(workURL)
+            ]).then(function (values) {
+                var quoteCounts = values[0];
+                var workText = values[1];
+                //console.log(workText);
+
+                $scope.root = {id: 'root', children: []};
+                var cur_node = $scope.root;
+
+                var para_seq = 0;
+                var para_id = null;
+                var para_lines = [];
+
+                var lines = workText.split('\n');
+                for (var i = 0; i < lines.length; i++) {
+                    var line = lines[i];
+                    var firstToken = line.split(' ')[0];
+                    if (firstToken[0] == 'h' && firstToken.length == 3 && firstToken[2] == '.') {
+                        var groupLevel = parseInt(firstToken[1]);
+                        var label = line.substring(firstToken.length);
+                        var new_node = {
+                            type: 'group',
+                            id: null,
+                            label: label,
+                            parent: cur_node,
+                            children: [],
+                            num_quotes: 0
+                        };
+                        var parent_node = $scope.root;
+                        for (var p = 1; p < groupLevel; p++) {
+                            parent_node = parent_node.children[parent_node.children.length - 1];
+                        }
+                        parent_node.children.push(new_node);
+                        cur_node = new_node;
+                    } else {
+                        if (!line) {
+                            if (para_lines.length > 0) {
+                                var para = {
+                                    type: 'para',
+                                    id: para_id,
+                                    parent: cur_node,
+                                    num_quotes: quoteCounts[para_id],
+                                    text: para_lines.join('<br />')
+                                };
+                                var id_parts = para_id.split('-');
+                                var parent_node = $scope.root;
+                                for (var p = 1; p < id_parts.length; p++) {
+                                    var parent_node = parent_node.children[parent_node.children.length - 1];
+                                    var chunk_Id = id_parts.slice(0, p).join('-');
+                                    parent_node.id = chunk_Id;
+                                    parent_node.num_quotes = quoteCounts[chunk_Id];
+                                }
+                                cur_node.children.push(para);
+                                para_lines = [];
+                            }
+                        } else {
+                            para_seq += 1;
+                            if (firstToken[0] === 'p' && firstToken[firstToken.length - 1] === '.') {
+                                if (firstToken[1] === '(' && firstToken[firstToken.length - 2] === ')') {
+                                    para_id = firstToken.substring(3, firstToken.length - 2);
+                                } else {
+                                    para_id = 'p' + para_seq;
+                                }
+                                line = line.substring(firstToken.length);
+                            }
+                            para_lines.push(line);
+                        }
+                    }
+                }
+                if (para_lines.length > 0) {
+                    var para = {type: 'para', id: para_id, parent: cur_node, text: para_lines.join('<br />')};
+                    cur_node.children.push(para);
+                }
+                console.log($scope.root);
+            });
+        }
+
         console.log($routeParams);
         $scope.workID = null;
         $scope.versionID = null;;
@@ -54,16 +139,22 @@ angular.module('matchmakerApp')
         if ($routeParams.work) {$scope.workID = $routeParams.work;}
         if ($routeParams.version) {$scope.versionID = $routeParams.version;}
 
-       for (var i = 0; i < $rootScope.works.length; i++) {
-            if ($scope.workID == $rootScope.works[i].id) {
-                for (var j = 0; j < $rootScope.works[i].versions.length; j++) {
-                    if ($scope.versionID == $rootScope.works[i].versions[j].id) {
-                        $scope.url = $rootScope.works[i].versions[j].url;
-                        break;
+        MatchmakerIndex.getIndex().then(function(indexData){
+            var workURL;
+            var works = indexData.works;
+            for (var i = 0; i < works.length; i++) {
+                if ($scope.workID == works[i].id) {
+                    for (var j = 0; j < works[i].versions.length; j++) {
+                        if ($scope.versionID == works[i].versions[j].id) {
+                            workURL = works[i].versions[j].url;
+                            break;
+                        }
                     }
                 }
             }
-        }
+            $scope.getWorkTextAndCounts($scope.workID, workURL);
+        });
+
 
         console.log('work='+$scope.workID+' version='+$scope.versionID+' url='+$scope.url);
 
@@ -80,10 +171,6 @@ angular.module('matchmakerApp')
             }
         };
 
-        $scope.root = {};
-        $scope.articles = [];
-        $scope.selectedChunk = '';
-
         $scope.showArticles = function(chunkid) {
             console.log('showArticles', chunkid);
             MatchDataSOLR.getMatches($scope.workID, chunkid).then(
@@ -97,85 +184,6 @@ angular.module('matchmakerApp')
                 }
             );
         }
-
-
-        $q.all([
-            QuoteCountsAPI.getCounts($scope.workID),
-            MatchmakerText.getText($scope.url)
-        ]).then(function(values){
-            var quoteCounts = values[0];
-            var workText = values[1];
-            //console.log(workText);
-
-            $scope.root = {id: 'root', children: []};
-            var cur_node = $scope.root;
-
-            var para_seq = 0;
-            var para_id = null;
-            var para_lines = [];
-
-            var lines = workText.split('\n');
-            for (var i = 0; i < lines.length; i++) {
-                var line = lines[i];
-                var firstToken = line.split(' ')[0];
-                if (firstToken[0] == 'h' && firstToken.length == 3 && firstToken[2] == '.') {
-                    var groupLevel = parseInt(firstToken[1]);
-                    var label = line.substring(firstToken.length);
-                    var new_node = {
-                        type: 'group',
-                        id: null,
-                        label: label,
-                        parent: cur_node,
-                        children: [],
-                        num_quotes: 0
-                    };
-                    var parent_node = $scope.root;
-                    for (var p = 1; p < groupLevel; p++) {
-                        parent_node = parent_node.children[parent_node.children.length - 1];
-                    }
-                    parent_node.children.push(new_node);
-                    cur_node = new_node;
-                } else {
-                    if (!line) {
-                        if (para_lines.length > 0) {
-                            var para = {
-                                type: 'para',
-                                id: para_id,
-                                parent: cur_node,
-                                num_quotes: quoteCounts[para_id],
-                                text: para_lines.join('<br />')
-                            };
-                            var id_parts = para_id.split('-');
-                            var parent_node = $scope.root;
-                            for (var p = 1; p < id_parts.length; p++) {
-                                var parent_node = parent_node.children[parent_node.children.length - 1];
-                                var chunk_Id = id_parts.slice(0, p).join('-');
-                                parent_node.id = chunk_Id;
-                                parent_node.num_quotes = quoteCounts[chunk_Id];
-                            }
-                            cur_node.children.push(para);
-                            para_lines = [];
-                        }
-                    } else {
-                        para_seq += 1;
-                        if (firstToken[0] === 'p' && firstToken[firstToken.length - 1] === '.') {
-                            if (firstToken[1] === '(' && firstToken[firstToken.length - 2] === ')') {
-                                para_id = firstToken.substring(3, firstToken.length - 2);
-                            } else {
-                                para_id = 'p' + para_seq;
-                            }
-                            line = line.substring(firstToken.length);
-                        }
-                        para_lines.push(line);
-                    }
-                }
-            }
-            if (para_lines.length > 0) {
-                var para = {type: 'para', id: para_id, parent: cur_node, text: para_lines.join('<br />')};
-                cur_node.children.push(para);
-            }
-            console.log($scope.root);
-        });
 
         $scope.toggleGroup = function (group) {
             if ($scope.isGroupShown(group)) {
@@ -402,18 +410,29 @@ angular.module('matchmakerApp')
     })
 
     .service('MatchmakerIndex', function ($http, $q) {
+        var index, p;
         return {
-            getIndex: function () {
-                var deferred = $q.defer();
-                var url = 'https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/index.json';
-                $http.get(url).then(
-                    function (response) {
-                        deferred.resolve(response.data);
-                    }
-                );
-                return deferred.promise;
+            getIndex: function(refresh) {
+                console.log('getIndex',refresh);
+                return $q.when(refresh ? helper() : index || p || helper());
             }
         }
+        function helper () {
+            var deferred = $q.defer();
+            p = deferred.promise;
+            var url = 'https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/index.json';
+            $http.get(url).then(
+                function(response) {
+                    index = response.data;
+                    deferred.resolve(response.data);
+                },
+                function(err) {
+                    deferred.reject(err);
+                }
+            );
+            return deferred.promise;
+        }
+
     })
 
     .service('MatchmakerText', function ($http, $q) {

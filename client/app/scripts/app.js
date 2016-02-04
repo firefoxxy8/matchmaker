@@ -20,16 +20,31 @@ angular
         'ui.bootstrap'
     ])
 
-    .run(function ($rootScope, $window) {
+    .provider("mode", function ($windowProvider) {
+        this.hostname = $windowProvider.$get().location.hostname
+        console.log($windowProvider.$get().location);
+        this.$get = function () {
+            return {
+                isDev: this.hostname == 'localhost',
+                isProd: !(this.hostname == 'localhost')
+                }
+            }
+    })
+
+    .run(function ($rootScope, mode) {
 
         // Matchmaker thresholds
         $rootScope.minSimilarity = localStorage.getItem("minSimilarity") || 90;
         $rootScope.minMatchSize = localStorage.getItem("minMatchSize") || 20;
         $rootScope.debug = localStorage.getItem("debug") || 'false';
 
+        //$rootScope.dev = $window.location.hostname == 'localhost';
+        $rootScope.devMode = mode.isDev;
+        $rootScope.baseUrl = $rootScope.devMode ? '/' : 'matchmaker';
+        console.log($rootScope.devMode,$rootScope.baseUrl);
+
         // API host and credentials
-        console.log($window.location.hostname);
-        $rootScope.apiHost = $window.location.hostname == 'localhost' ? 'labs.jstor.org.local' : 'labs.jstor.org';
+        $rootScope.apiHost = $rootScope.devMode ? 'labs.jstor.org.local' : 'labs.jstor.org';
         $rootScope.apiUser = 'demo';
         $rootScope.apiPassword = 'demo';
 
@@ -40,7 +55,7 @@ angular
 
     })
 
-    .config(function ($routeProvider, $locationProvider, $httpProvider) {
+    .config(function ($routeProvider, $locationProvider, modeProvider) {
         $routeProvider
             .when('/about', {
                 templateUrl: 'views/about.html',
@@ -60,8 +75,7 @@ angular
             .otherwise({
                 redirectTo: '/'
             })
-
-            $locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(false);
     })
 
     .directive('navMenu', function ($location) {
