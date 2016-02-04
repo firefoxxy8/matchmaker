@@ -22,11 +22,12 @@ angular
 
     .provider("mode", function ($windowProvider) {
         this.hostname = $windowProvider.$get().location.hostname
-        console.log($windowProvider.$get().location);
         this.$get = function () {
             return {
-                isDev: this.hostname == 'localhost',
-                isProd: !(this.hostname == 'localhost')
+                hostname: this.hostname,
+                local: this.hostname == 'localhost' || this.hostname == '127.0.0.1',
+                github: this.hostname == 'jstor-labs.github.io',
+                prod: !(this.hostname == 'localhost' || this.hostname == '127.0.0.1' || this.hostname == 'jstor-labs.github.io')
                 }
             }
     })
@@ -38,13 +39,11 @@ angular
         $rootScope.minMatchSize = localStorage.getItem("minMatchSize") || 20;
         $rootScope.debug = localStorage.getItem("debug") || 'false';
 
-        //$rootScope.dev = $window.location.hostname == 'localhost';
-        $rootScope.devMode = mode.isDev;
-        $rootScope.baseUrl = $rootScope.devMode ? '/' : 'matchmaker';
-        console.log($rootScope.devMode,$rootScope.baseUrl);
+        $rootScope.baseUrl = mode.local ? '/#/' : mode.github ? '/matchmaker/#/' : '/matchmaker/';
+        console.log(mode.hostname,$rootScope.baseUrl);
 
         // API host and credentials
-        $rootScope.apiHost = $rootScope.devMode ? 'labs.jstor.org.local' : 'labs.jstor.org';
+        $rootScope.apiHost = mode.dev ? 'labs.jstor.org.local' : 'labs.jstor.org';
         $rootScope.apiUser = 'demo';
         $rootScope.apiPassword = 'demo';
 
@@ -75,7 +74,7 @@ angular
             .otherwise({
                 redirectTo: '/'
             })
-            $locationProvider.html5Mode(false);
+            $locationProvider.html5Mode(modeProvider.$get().prod);
     })
 
     .directive('navMenu', function ($location) {
