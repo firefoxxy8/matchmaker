@@ -19,16 +19,14 @@ angular.module('matchmakerApp')
     .controller('MatchmakerIndexCtrl', function ($rootScope, $scope, $location, MatchmakerIndex) {
 
         MatchmakerIndex.getIndex().then(function(indexData){
-            $rootScope.works = indexData.works;
+            $rootScope.works = indexData;
             console.log($rootScope.works);
         });
 
-        $scope.loadWork = function(work) {
-            var workID = work.id;
-            var versionID = work.versions[0].id;
-            for (var i = 0; i < work.versions.length; i++) {
-                if (work.versions[i].default) {
-                    versionID = work.versions[i].id;
+        $scope.loadWork = function(workID, work) {
+            var versionID;
+            for (versionID in work.versions) {
+                if (work.versions[versionID].default) {
                     break;
                 }
             }
@@ -135,7 +133,7 @@ angular.module('matchmakerApp')
 
         console.log($routeParams);
         $scope.workID = null;
-        $scope.versionID = null;;
+        $scope.versionID = null;
         $scope.url;
 
         if ($routeParams.work) {$scope.workID = $routeParams.work;}
@@ -146,7 +144,7 @@ angular.module('matchmakerApp')
             var works = indexData;
             var work = works[$scope.workID];
             if ($scope.versionID) {
-                workURL = work.versions[$scope.versionID];
+                workURL = work.versions[$scope.versionID].url;
             } else {
                 for (var versionID in work.versions) {
                     workURL = work.versions[versionID].url;

@@ -264,7 +264,7 @@ class QuoteFinder(object):
 						   				'quote_prefix':         prefix,
 						   				'quote_suffix':         suffix,
 						   				'named_passage_id':     np['passage_id'],
-										'chunk_ids':            np['source_ids'],
+										'chunk_ids':            np['source_ids'] + [np['passage_id']],
 										'similarity':           1.0,
 										'matched_text':			exact.strip()})
 						idx = end_pos
@@ -372,7 +372,7 @@ class QuoteFinder(object):
 										 'quote_suffix':         suffix,
 										 'bounding_boxes':       bounding_boxes,
 										 'named_passage_id':     np['passage_id'],
-										 'chunk_ids':            np['source_ids'],
+										 'chunk_ids':            np['source_ids'] + [np['passage_id']],
 										 'similarity':           1.0,
 										 'matched_text':		 exact.strip()}
 								logger.info(json.dumps(match,sort_keys=True,indent=2))

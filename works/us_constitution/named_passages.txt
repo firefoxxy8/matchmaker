@@ -1,89 +1,89 @@
-legislative_vesting_clause	Legislative Vesting Clause	legislative vesting clause	a1s1
-contract_clause	Contract Clause	contract clause	a1s10c1
-export_clause	Export Clause	export clause|import/export clause	a1s10c2
-import/export_clause	Import/Export Clause	export clause|import/export clause	a1s10c2
-compact_clause	Compact Clause	compact clause|tonnage clause	a1s10c3
-tonnage_clause	Tonnage Clause	compact clause|tonnage clause	a1s10c3
-qualifications_clause	Qualifications Clause	qualifications clause	a1s2c1
-enumeration_clause	Enumeration Clause	three-fifths clause|enumeration clause	a1s2c3
-three-fifths_clause	Three-Fifths Clause	three-fifths clause|enumeration clause	a1s2c3
-impeachment_clause_(power_to_impeach)	Impeachment Clause (Power to Impeach)	impeachment clause (power to impeach)	a1s2c5
-qualifications_(of_senators)_clause	Qualifications (of Senators) Clause	qualifications (of senators) clause	a1s3c3
-impeachment_clause_(effect_of)	Impeachment Clause (Effect of)	impeachment clause (effect of)	a1s3c7
-speech_or_debate_clause	Speech or Debate Clause	speech or debate clause	a1s6c1
-emoluments_clause	Emoluments Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1s6c2
-incompatibility_clause	Incompatibility Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1s6c2
-ineligibility_clause	Ineligibility Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1s6c2
-sinecure_clause	Sinecure Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1s6c2
-origination_clause	Origination Clause	origination clause|revenue clause	a1s7c1
-revenue_clause	Revenue Clause	origination clause|revenue clause	a1s7c1
-presentment_clause	Presentment Clause	presentment clause	a1s7c2|a1s7c3
-orders_resolutions_and_votes_clause	"Orders, Resolutions, and Votes Clause"	"orders, resolutions, and votes clause"	a1s7c3
-general_welfare_clause	General Welfare Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1s8c1
-spending_clause	Spending Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1s8c1
-taxing_and_spending_clause	Taxing and Spending Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1s8c1
-uniformity_clause	Uniformity Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1s8c1
-war_clause	War Clause	war clause	a1s8c11
-militia_clause	Militia Clause	militia clause	a1s8c15|a1s8c16
-enclave_clause	Enclave Clause	enclave clause	a1s8c17
-basket_clause	Basket Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1s8c18
-coefficient_clause	Coefficient Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1s8c18
-elastic_clause	Elastic Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1s8c18
-implied_powers_clause	Implied Powers Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1s8c18
-necessary_and_proper_clause	Necessary and Proper Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1s8c18
-sweeping_clause	Sweeping Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1s8c18
-commerce_clause	Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1s8c3
-dormant_commerce_clause	Dormant Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1s8c3
-foreign_commerce_clause	Foreign Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1s8c3
-indian_commerce_clause	Indian Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1s8c3
-interstate_commerce_clause	Interstate Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1s8c3
-negative_commerce_clause	Negative Commerce Clause	negative commerce clause	a1s8c3
-naturalization_clause	Naturalization Clause	naturalization clause	a1s8c4|am14
-coinage_clause	Coinage Clause	coinage clause	a1s8c5
-copyright_clause	Copyright Clause	copyright clause	a1s8c8
-patent_and_copyright_clause	Patent and Copyright Clause	patent and copyright clause	a1s8c8
-1808_clause	1808 Clause	1808 clause|migration or importation clause	a1s9c1
-migration_or_importation_clause	Migration or Importation Clause	1808 clause|migration or importation clause	a1s9c1
-suspension_clause	Suspension Clause	suspension clause	a1s9c2
-ex_post_facto_clause	Ex Post Facto Clause	ex post facto clause	a1s9c3
-statement_and_account_clause	Statement and Account Clause	statement and account clause	a1s9c7
-emolument_clause	Emolument Clause	emolument clause|title of nobility clause	a1s9c8
-title_of_nobility_clause	Title of Nobility Clause	emolument clause|title of nobility clause	a1s9c8
-executive_vesting_clause	Executive Vesting Clause	executive vesting clause	a2s1
-natural_born_citizen_clause	Natural Born Citizen Clause	qualifications clause|natural born citizen clause	a2s1c5
-qualifications_clause	Qualifications Clause	qualifications clause|natural born citizen clause	a2s1c5
-opinion_clause	Opinion Clause	opinion clause	a2s2c1
-advice_and_consent_clause	Advice and Consent Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2s2c2
-appointments_clause	Appointments Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2s2c2
-excepting_clause	Excepting Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2s2c2
-treaty_clause	Treaty Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2s2c2
-faithful_execution_clause	Faithful Execution Clause	faithful execution clause|faithfully executed clause|take care clause	a2s3
-faithfully_executed_clause	Faithfully Executed Clause	faithful execution clause|faithfully executed clause|take care clause	a2s3
-take_care_clause	Take Care Clause	faithful execution clause|faithfully executed clause|take care clause	a2s3
-impeachment_clause	Impeachment Clause	impeachment clause	a2s4
-judicial_vesting_clause	Judicial Vesting Clause	judicial vesting clause	a3s1
-admiralty_clause	Admiralty Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3s2c1
-arisings_clause	Arisings Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3s2c1
-case_or_controversy_clause	Case or Controversy Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3s2c1
-diversity_clause	Diversity Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3s2c1
-exceptions_clause	Exceptions Clause	exceptions clause	a3s2c2
-full_faith_and_credit_clause	Full Faith and Credit Clause	full faith and credit clause	a4s1
-comity_clause	Comity Clause	comity clause|privileges and immunities clause|right to travel clause	a4s2c1
-privileges_and_immunities_clause	Privileges and Immunities Clause	comity clause|privileges and immunities clause|right to travel clause	a4s2c1|am14
-right_to_travel_clause	Right to Travel Clause	comity clause|privileges and immunities clause|right to travel clause	a4s2c1|am14
-extradition_clause	Extradition Clause	extradition clause	a4s2c2
-fugitive_slave_clause	Fugitive Slave Clause	fugitive slave clause	a4s2c3
-admissions_clause	Admissions Clause	admissions clause	a4s3c1
-disposing_clause	Disposing Clause	property clause|territorial clause|disposing clause	a4s3c2
-property_clause	Property Clause	property clause|territorial clause|disposing clause	a4s3c2
-territorial_clause	Territorial Clause	property clause|territorial clause|disposing clause	a4s3c2
-guarantee_clause	Guarantee Clause	guarantee clause|republican form clause	a4s4
-republican_form_clause	Republican Form Clause	guarantee clause|republican form clause	a4s4
-supervising_clause	Supervising Clause	supervising clause|supremacy clause	a6c2
-supremacy_clause	Supremacy Clause	supervising clause|supremacy clause	a6c2
-affirmation_clause	Affirmation Clause	loyalty clause|affirmation clause|oath or affirmation clause	a6c3
-loyalty_clause	Loyalty Clause	loyalty clause|affirmation clause|oath or affirmation clause	a6c3
-oath_or_affirmation_clause	Oath or Affirmation Clause	loyalty clause|affirmation clause|oath or affirmation clause	a6c3
+legislative_vesting_clause	Legislative Vesting Clause	legislative vesting clause	a1-s1
+contract_clause	Contract Clause	contract clause	a1-s10-c1
+export_clause	Export Clause	export clause|import/export clause	a1-s10-c2
+import/export_clause	Import/Export Clause	export clause|import/export clause	a1-s10-c2
+compact_clause	Compact Clause	compact clause|tonnage clause	a1-s10-c3
+tonnage_clause	Tonnage Clause	compact clause|tonnage clause	a1-s10-c3
+qualifications_clause	Qualifications Clause	qualifications clause	a1-s2-c1
+enumeration_clause	Enumeration Clause	three-fifths clause|enumeration clause	a1-s2-c3
+three-fifths_clause	Three-Fifths Clause	three-fifths clause|enumeration clause	a1-s2-c3
+impeachment_clause_(power_to_impeach)	Impeachment Clause (Power to Impeach)	impeachment clause (power to impeach)	a1-s2-c5
+qualifications_(of_senators)_clause	Qualifications (of Senators) Clause	qualifications (of senators) clause	a1-s3-c3
+impeachment_clause_(effect_of)	Impeachment Clause (Effect of)	impeachment clause (effect of)	a1-s3-c7
+speech_or_debate_clause	Speech or Debate Clause	speech or debate clause	a1-s6-c1
+emoluments_clause	Emoluments Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1-s6-c2
+incompatibility_clause	Incompatibility Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1-s6-c2
+ineligibility_clause	Ineligibility Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1-s6-c2
+sinecure_clause	Sinecure Clause	emoluments clause|incompatibility clause|ineligibility clause|sinecure clause	a1-s6-c2
+origination_clause	Origination Clause	origination clause|revenue clause	a1-s7-c1
+revenue_clause	Revenue Clause	origination clause|revenue clause	a1-s7-c1
+presentment_clause	Presentment Clause	presentment clause	a1-s7-c2|a1-s7-c3
+orders_resolutions_and_votes_clause	"Orders, Resolutions, and Votes Clause"	"orders, resolutions, and votes clause"	a1-s7-c3
+general_welfare_clause	General Welfare Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1-s8-c1
+spending_clause	Spending Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1-s8-c1
+taxing_and_spending_clause	Taxing and Spending Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1-s8-c1
+uniformity_clause	Uniformity Clause	general welfare clause|spending clause|taxing and spending clause|uniformity clause	a1-s8-c1
+war_clause	War Clause	war clause	a1-s8-c11
+militia_clause	Militia Clause	militia clause	a1-s8-c15|a1-s8-c16
+enclave_clause	Enclave Clause	enclave clause	a1-s8-c17
+basket_clause	Basket Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1-s8-c18
+coefficient_clause	Coefficient Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1-s8-c18
+elastic_clause	Elastic Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1-s8-c18
+implied_powers_clause	Implied Powers Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1-s8-c18
+necessary_and_proper_clause	Necessary and Proper Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1-s8-c18
+sweeping_clause	Sweeping Clause	basket clause|coefficient clause|elastic clause|implied powers clause|necessary and proper clause|sweeping clause	a1-s8-c18
+commerce_clause	Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1-s8-c3
+dormant_commerce_clause	Dormant Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1-s8-c3
+foreign_commerce_clause	Foreign Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1-s8-c3
+indian_commerce_clause	Indian Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1-s8-c3
+interstate_commerce_clause	Interstate Commerce Clause	dormant commerce clause|commerce clause|foreign commerce clause|indian commerce clause|interstate commerce clause	a1-s8-c3
+negative_commerce_clause	Negative Commerce Clause	negative commerce clause	a1-s8-c3
+naturalization_clause	Naturalization Clause	naturalization clause	a1-s8-c4|am14
+coinage_clause	Coinage Clause	coinage clause	a1-s8-c5
+copyright_clause	Copyright Clause	copyright clause	a1-s8-c8
+patent_and_copyright_clause	Patent and Copyright Clause	patent and copyright clause	a1-s8-c8
+1808_clause	1808 Clause	1808 clause|migration or importation clause	a1-s9-c1
+migration_or_importation_clause	Migration or Importation Clause	1808 clause|migration or importation clause	a1-s9-c1
+suspension_clause	Suspension Clause	suspension clause	a1-s9-c2
+ex_post_facto_clause	Ex Post Facto Clause	ex post facto clause	a1-s9-c3
+statement_and_account_clause	Statement and Account Clause	statement and account clause	a1-s9-c7
+emolument_clause	Emolument Clause	emolument clause|title of nobility clause	a1-s9-c8
+title_of_nobility_clause	Title of Nobility Clause	emolument clause|title of nobility clause	a1-s9-c8
+executive_vesting_clause	Executive Vesting Clause	executive vesting clause	a2-s1
+natural_born_citizen_clause	Natural Born Citizen Clause	qualifications clause|natural born citizen clause	a2-s1-c5
+qualifications_clause	Qualifications Clause	qualifications clause|natural born citizen clause	a2-s1-c5
+opinion_clause	Opinion Clause	opinion clause	a2-s2-c1
+advice_and_consent_clause	Advice and Consent Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2-s2-c2
+appointments_clause	Appointments Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2-s2-c2
+excepting_clause	Excepting Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2-s2-c2
+treaty_clause	Treaty Clause	advice and consent clause|appointments clause|excepting clause|treaty clause	a2-s2-c2
+faithful_execution_clause	Faithful Execution Clause	faithful execution clause|faithfully executed clause|take care clause	a2-s3
+faithfully_executed_clause	Faithfully Executed Clause	faithful execution clause|faithfully executed clause|take care clause	a2-s3
+take_care_clause	Take Care Clause	faithful execution clause|faithfully executed clause|take care clause	a2-s3
+impeachment_clause	Impeachment Clause	impeachment clause	a2-s4
+judicial_vesting_clause	Judicial Vesting Clause	judicial vesting clause	a3-s1
+admiralty_clause	Admiralty Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3-s2-c1
+arisings_clause	Arisings Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3-s2-c1
+case_or_controversy_clause	Case or Controversy Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3-s2-c1
+diversity_clause	Diversity Clause	admiralty clause|arisings clause|case or controversy clause|diversity clause	a3-s2-c1
+exceptions_clause	Exceptions Clause	exceptions clause	a3-s2-c2
+full_faith_and_credit_clause	Full Faith and Credit Clause	full faith and credit clause	a4-s1
+comity_clause	Comity Clause	comity clause|privileges and immunities clause|right to travel clause	a4-s2-c1
+privileges_and_immunities_clause	Privileges and Immunities Clause	comity clause|privileges and immunities clause|right to travel clause	a4-s2-c1|am14
+right_to_travel_clause	Right to Travel Clause	comity clause|privileges and immunities clause|right to travel clause	a4-s2-c1|am14
+extradition_clause	Extradition Clause	extradition clause	a4-s2-c2
+fugitive_slave_clause	Fugitive Slave Clause	fugitive slave clause	a4-s2-c3
+admissions_clause	Admissions Clause	admissions clause	a4-s3-c1
+disposing_clause	Disposing Clause	property clause|territorial clause|disposing clause	a4-s3-c2
+property_clause	Property Clause	property clause|territorial clause|disposing clause	a4-s3-c2
+territorial_clause	Territorial Clause	property clause|territorial clause|disposing clause	a4-s3-c2
+guarantee_clause	Guarantee Clause	guarantee clause|republican form clause	a4-s4
+republican_form_clause	Republican Form Clause	guarantee clause|republican form clause	a4-s4
+supervising_clause	Supervising Clause	supervising clause|supremacy clause	a6-c2
+supremacy_clause	Supremacy Clause	supervising clause|supremacy clause	a6-c2
+affirmation_clause	Affirmation Clause	loyalty clause|affirmation clause|oath or affirmation clause	a6-c3
+loyalty_clause	Loyalty Clause	loyalty clause|affirmation clause|oath or affirmation clause	a6-c3
+oath_or_affirmation_clause	Oath or Affirmation Clause	loyalty clause|affirmation clause|oath or affirmation clause	a6-c3
 establishment clause	Establishment Clause	freedom of the press clause|freedom of speech clause|establishment clause|exercise clause|free exercise clause|religion clause	am1
 exercise_clause	Exercise Clause	freedom of the press clause|freedom of speech clause|establishment clause|exercise clause|free exercise clause|religion clause	am1
 free_exercise_clause	Free Exercise Clause	freedom of the press clause|freedom of speech clause|establishment clause|exercise clause|free exercise clause|religion clause	am1
@@ -100,7 +100,7 @@ search_and_seizure_clause	Search and Seizure Clause	search and seizure clause|wa
 warrant_clause	Warrant Clause	search and seizure clause|warrant clause	am4
 double_jeopardy_clause	Double Jeopardy Clause	double jeopardy clause|due process clause|self-incrimination clause|takings clause	am5
 self-incrimination_clause	Self-Incrimination Clause	double jeopardy clause|due process clause|self-incrimination clause|takings clause	am5
-takings_clause	Takings Clause	double jeopardy clause|due process clause|self-incrimination clause|takings clause	am5
+takings_clause	Takings Clause	double jeopardy clause|due process clause|self-incrimination clause|takings clause	am-5
 due_process_clause	Due Process Clause	double jeopardy clause|due process clause|self-incrimination clause|takings clause	am5|am14
 compulsory_process_clause	Compulsory Process Clause	compulsory process clause|speedy trial clause	am6
 speedy_trial_clause	Speedy Trial Clause	compulsory process clause|speedy trial clause	am6
