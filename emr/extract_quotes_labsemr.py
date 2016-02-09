@@ -50,8 +50,8 @@ class Job(MRJob):
 		try:
 			self.named_passages_text = self.get_named_passages_text(self.work, self.version)
 			session = botocore.session.get_session()
-			aws_access_key_id = os.environ['AWS_ACCESS_KEY_ID']
-			aws_secret_access_key = os.environ['AWS_SECRET_ACCESS_KEY']
+			aws_access_key_id = os.environ.get('AWS_ACCESS_KEY_ID')
+			aws_secret_access_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
 			if aws_access_key_id == None:
 				aws_access_key_id, aws_secret_access_key = self._get_s3_credentials()
 			session.set_credentials(aws_access_key_id,aws_secret_access_key)
