@@ -21,7 +21,7 @@
     "versions": {
       "default": {
         "url": "http://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/us_constitution.md",
-        "named_passages_url": "http://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/named_passages.md",
+        "named_passages_url": "http://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/named_passages.tsv",
         "default": true
       }
     }
