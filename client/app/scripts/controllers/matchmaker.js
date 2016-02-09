@@ -57,76 +57,79 @@ angular.module('matchmakerApp')
                 MatchmakerText.getText(workURL)
             ]).then(function (values) {
                 var quoteCounts = values[0];
+                //console.log(quoteCounts);
                 var workText = values[1];
                 //console.log(workText);
 
+                marked(workText, { renderer: renderer });
+
                 $scope.root = {id: 'root', children: []};
-                var cur_node = $scope.root;
 
-                var para_seq = 0;
-                var para_id = null;
-                var para_lines = [];
+                var renderer = new marked.Renderer();
 
-                var lines = workText.split('\n');
-                for (var i = 0; i < lines.length; i++) {
-                    var line = lines[i];
-                    var firstToken = line.split(' ')[0];
-                    if (firstToken[0] == 'h' && firstToken.length == 3 && firstToken[2] == '.') {
-                        var groupLevel = parseInt(firstToken[1]);
-                        var label = line.substring(firstToken.length);
-                        var new_node = {
-                            type: 'group',
-                            id: null,
-                            label: label,
-                            parent: cur_node,
-                            children: [],
-                            num_quotes: 0
-                        };
-                        var parent_node = $scope.root;
-                        for (var p = 1; p < groupLevel; p++) {
-                            parent_node = parent_node.children[parent_node.children.length - 1];
-                        }
-                        parent_node.children.push(new_node);
-                        cur_node = new_node;
-                    } else {
-                        if (!line) {
-                            if (para_lines.length > 0) {
-                                var para = {
-                                    type: 'para',
-                                    id: para_id,
-                                    parent: cur_node,
-                                    num_quotes: quoteCounts[para_id],
-                                    text: para_lines.join('<br />')
-                                };
-                                var id_parts = para_id.split('-');
-                                var parent_node = $scope.root;
-                                for (var p = 1; p < id_parts.length; p++) {
-                                    var parent_node = parent_node.children[parent_node.children.length - 1];
-                                    var chunk_Id = id_parts.slice(0, p).join('-');
-                                    parent_node.id = chunk_Id;
-                                    parent_node.num_quotes = quoteCounts[chunk_Id];
-                                }
-                                cur_node.children.push(para);
-                                para_lines = [];
-                            }
+                renderer.heading = function (text, level) {
+
+                    var parent = $scope.root;
+                    for (var l = 0; l < level-1; l++) {
+                        parent = parent.children.slice(-1)[0];
+                    }
+
+                    //console.log('heading','h'+level,text);
+                    var new_node = {
+                        type: 'group',
+                        id: null,
+                        label: text,
+                        parent: parent,
+                        children: [],
+                        num_quotes: 0
+                    };
+                    parent.children.push(new_node);
+                };
+
+                renderer.paragraph = function (text) {
+                    console.log('paragraph',text);
+                };
+
+                renderer.html = function (text) {
+                    var parent = $scope.root;
+                    while (parent.children && parent.children.length > 0) {
+                        var last = parent.children.slice(-1)[0];
+                        if (last.children) {
+                            parent = last;
                         } else {
-                            para_seq += 1;
-                            if (firstToken[0] === 'p' && firstToken[firstToken.length - 1] === '.') {
-                                if (firstToken[1] === '(' && firstToken[firstToken.length - 2] === ')') {
-                                    para_id = firstToken.substring(3, firstToken.length - 2);
-                                } else {
-                                    para_id = 'p' + para_seq;
-                                }
-                                line = line.substring(firstToken.length);
-                            }
-                            para_lines.push(line);
+                            break;
                         }
                     }
-                }
-                if (para_lines.length > 0) {
-                    var para = {type: 'para', id: para_id, parent: cur_node, text: para_lines.join('<br />')};
-                    cur_node.children.push(para);
-                }
+
+                    var el = document.createElement( 'div' );
+                    el.innerHTML = text;
+                    var paragraphs = el.getElementsByTagName('p');
+                    if (paragraphs.length == 1) {
+                        var para_id = paragraphs[0].id;
+                        var para_text = paragraphs[0].innerHTML;
+                        //console.log('html paragraph',chunk_id,chunk_text);
+                        var para = {
+                            type: 'para',
+                            id: para_id,
+                            parent: parent,
+                            num_quotes: quoteCounts[para_id],
+                            text: para_text
+                        };
+                        parent.children.push(para);
+
+                        var id_parts = para_id.split('-');
+                        var parent_node = $scope.root;
+                        for (var p = 1; p < id_parts.length; p++) {
+                            var parent_node = parent_node.children[parent_node.children.length - 1];
+                            var chunk_Id = id_parts.slice(0, p).join('-');
+                            parent_node.id = chunk_Id;
+                            parent_node.num_quotes = quoteCounts[chunk_Id];
+                        }
+                    }
+                };
+
+                marked(workText, { renderer: renderer });
+
                 console.log($scope.root);
             });
         }
@@ -155,8 +158,11 @@ angular.module('matchmakerApp')
             $scope.getWorkTextAndCounts($scope.workID, workURL);
         });
 
-
         console.log('work='+$scope.workID+' version='+$scope.versionID+' url='+$scope.url);
+
+        $scope.log = function(s) {
+            console.log(s);
+        }
 
         $scope.getBootstrapSize = function () {
             //set a $scope variable or a service variable that reused
@@ -185,37 +191,32 @@ angular.module('matchmakerApp')
             );
         }
 
-        $scope.toggleGroup = function (group) {
-            if ($scope.isGroupShown(group)) {
-                $scope.shownGroup = null;
-                $scope.shownSection = null;
-                console.log("hid ", group);
-               // ga('send', 'event', 'accordion', 'close');
-            } else {
-                $scope.shownGroup = group;
-                console.log("showed", group);
-               // ga('send', 'event', 'accordion', 'open');
-            }
+        $scope._open = [];
+        $scope.isShown = function (node) {
+            var isShown =  node.parent.id == 'root' || $scope.isOpen(node.parent);
+            //if (isShown) console.log('isShown',node.id,isShown);
+            return isShown;
         };
-        $scope.isGroupShown = function (group) {
-            return $scope.shownGroup === group;
+        $scope.isOpen = function(node) {
+            var isOpen = $scope._open.indexOf(node.id) >= 0;
+            //console.log('isOpen',node.id,isOpen);
+            return isOpen;
         };
 
-        /*
-         * if given item is the selected item, deselect it
-         * else, select the given group
-         */
-        $scope.toggleSection = function (section) {
-            if ($scope.isSectionShown(section)) {
-                console.log("hid ", section);
-                $scope.shownSection = null;
+        $scope.toggle = function (node) {
+            var idx = $scope._open.indexOf(node.id);
+            if (idx >= 0) {
+                $scope._open = $scope._open.slice(0,idx);
+                console.log('toggle','close',node.id,$scope._open);
             } else {
-                $scope.shownSection = section;
-                console.log("showed ", section);
+                $scope._open = [node.id];
+                var cur = node;
+                while (cur.parent) {
+                    cur = cur.parent;
+                    $scope._open.unshift(cur.id);
+                }
+                console.log('toggle','open',node.id,$scope._open);
             }
-        };
-        $scope.isSectionShown = function (section) {
-            return $scope.shownSection === section;
         };
 
         $scope.openMatchesModal = function (size) {

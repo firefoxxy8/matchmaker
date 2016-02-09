@@ -1,33 +1,30 @@
 {
-  "works": [
-    {
-      "id": "the_divine_comedy",
-      "title": "The Divine Comedy",
-      "author": "Dante Alighieri",
-      "versions": [
-        {
-          "id": "italian",
-          "label": "Gutenberg Italian",
-          "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_italian.md"
-        },
-        {
-          "id": "longfellow",
-          "label": "Gutenberg English (Longfellow)",
-          "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_longfellow.md",
-          "default": true
-        }
-      ]
-    },
-    {
-      "id": "constitution_para",
-      "title": "The United States Constitution",
-      "versions": [
-        {
-          "id": "default",
-          "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution.md",
-          "default": true
-        }
-      ]
+
+  "the_divine_comedy": {
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "versions": {
+      "italian": {
+        "label": "Gutenberg Italian",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_italian.md"
+      },
+      "longfellow": {
+        "label": "Gutenberg English (Longfellow)",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_longfellow.md",
+        "default": true
+      }
     }
-  ]
+  },
+
+  "us_constitution": {
+    "title": "The United States Constitution",
+    "versions": {
+      "default": {
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/us_constitution.md",
+        "named_passages_url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/named_passages.md",
+        "default": true
+      }
+    }
+  }
+
 }
