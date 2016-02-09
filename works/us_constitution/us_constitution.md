@@ -489,7 +489,7 @@ No Soldier shall, in time of peace be quartered in any house, without the consen
 # Amendment 5
 
 <p id="am5-c1">
-<span id="due_process_clause"><span id="double_jeopardy_clause"><span id="self_incrimination_clause"><span id=takings"_clause">
+<span id="due_process_clause"><span id="double_jeopardy_clause"><span id="self_incrimination_clause"><span id="takings_clause">
 No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.</span></span></span></span></span>
 </p>
 
