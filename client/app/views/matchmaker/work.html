@@ -1,0 +1,64 @@
+<script type="text/ng-template" id="node_renderer.html">
+    <div class="section-accordion" ng-init="log(node.id)" ng-show="isShown(node)" ng-if="node.type == 'para'">
+        <div class="row vertical-align" ng-click="showArticles(node.id)">
+            <div class="col-xs-1" ng-bind-html="node.id.split('-')[2]"></div>
+            <div class="col-xs-11 verse" ng-bind-html="node.text"></div>
+            <div class="col-xs-1 text-right quote-count">{{ node.num_quotes | number }}</div>
+        </div>
+    </div>
+    <div class="item-stable" ng-init="log(node.id)" ng-class="{active: isShown(node)}" ng-style="{visibility:isShown(node)?'visible':'hidden'}" ng-if="node.type == 'group' && isShown(node)">
+        <div class="row heading vertical-align">
+            <div class="col-xs-1" ng-click="toggle(node)" ng-bind-html="isOpen(node) ? '-' : '+'"></div>
+            <div class="col-xs-1" ng-click="toggle(node)"></div>
+            <div class="col-xs-10" ng-click="toggle(node)">{{ node.label }}</div>
+            <div class="col-xs-1 text-right quote-count" ng-click="showArticles(node.id)">{{ node.num_quotes | number }}</div>
+        </div>
+        <div ng-repeat="node in node.children" ng-include="'node_renderer.html'" ng-if="isShown(node)"></div>
+    </div>
+</script>
+
+
+<div class="container-fluid" style="padding-left:0;padding-right:0;">
+
+    <div class="row">
+
+        <!-- Primary text -->
+        <div class="col-xs-12 col-md-6">
+            <div ng-repeat="node in root.children" ng-include="'node_renderer.html'"></div>
+        </div>
+
+        <!-- JSTOR matches -->
+        <div class="hidden-xs hidden-sm col-md-6">
+            <div resize style="height:{{windowHeight-100}}px;overflow-y:auto;">
+                <div ng-repeat="article in articles" class="article-result">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col text-left col-top article_title">
+                                <!-- <a href="#/app/article/{{ article.docid.replace('/','|') }}|1|0">{{article.title}}</a> -->
+                                <a href="{{article.stableURL}}">{{article.title}}</a>
+                            </div>
+                            <div class="inset">
+                                <p class="article_authors"> {{article.authors}} </p>
+
+                                <p class="article_citation">
+                                    <span class="article_journal">{{article.journal}}</span><span ng-if="article.journal">, </span>{{article.pubyear}}
+                                </p>
+
+                                <p class="article_keywords">{{article.merged}}</p>
+                            </div>
+                            <div class="snippet-list">
+                                <div ng-repeat="match in article.matches" class="item-text-wrap snippet-item">
+                                    <p class="article_snippet snippet" ng-click="articleViewerModal(match.matchid)">...<span ng-bind-html="match.snippet.small"></span>...</p>
+                                    <!-- <a class="article_snippet snippet" href="{{article.stableURL}}?seq={{match.snippet.page}}">...<span ng-bind-html="match.snippet.small"></span>...</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+

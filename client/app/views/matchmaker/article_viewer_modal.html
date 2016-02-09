@@ -1,0 +1,21 @@
+<!-- Modal -->
+<div class="modal-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-9">
+                <strong>{{matchID}}</strong>
+            </div>
+            <div class="col-xs-3 text-right">
+                <button class="btn btn-warning" type="button" ng-click="cancel()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div id="pageImage" class="modal-body" resize style="height:{{windowHeight-80}}px;overflow-y:auto;"> -->
+<div class="modal-body" resize style="height:{{windowHeight-80}}px;overflow-y:auto;">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <img class="image" style="width:{{image.scaledWidth}}px;height:{{image.scaledHeight}}px;border:1px solid lightgrey;" src="{{ image.url }}">
+        </div>
+    </div>
+</div>

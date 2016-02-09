@@ -1,0 +1,43 @@
+<!-- Modal -->
+<div class="modal-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-9">
+                <strong>Matches for {{selectedChunk[0] | titlecase}}, Canto {{selectedChunk[1].toUpperCase()}}, Verse{{selectedChunk[2]}}</strong>
+            </div>
+            <div class="col-xs-3 text-right">
+                <button class="btn btn-warning" type="button" ng-click="cancel()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div class="modal-body" resize style="height:{{windowHeight-200}}px;width:{{windowWidth}}px;overflow-y:auto;margin:6px 0;padding:3px;border:1px solid lightgrey;">
+-->
+<div class="modal-body" resize style="height:{{windowHeight-100}}px;overflow-y:auto;">
+    <div ng-repeat="article in articles" class="article-result">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col text-left col-top article_title">
+                    <!-- <a href="#/app/article/{{ article.docid.replace('/','|') }}|1|0">{{article.title}}</a> -->
+                    <a href="{{article.stableURL}}" target="_blank" >{{article.title}}</a>
+                </div>
+                <div class="inset">
+                    <p class="article_authors"> {{article.authors}} </p>
+
+                    <p class="article_citation">
+                        <span class="article_journal">{{article.journal}}</span><span ng-if="article.journal">, </span>{{article.pubyear}}
+                    </p>
+
+                    <p class="article_keywords">{{article.merged}}</p>
+                </div>
+                <div class="snippet-list">
+                    <div ng-repeat="match in article.matches" class="item-text-wrap snippet-item">
+                        <p class="article_snippet snippet" ng-click="articleViewerModal(match.matchid)">...<span ng-bind-html="match.snippet.small"></span>...</p>
+                        <!-- <a class="article_snippet snippet" href="{{article.stableURL}}?seq={{match.snippet.page}}">...<span ng-bind-html="match.snippet.small"></span>...</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
