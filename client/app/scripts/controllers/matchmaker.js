@@ -18,7 +18,6 @@ angular.module('matchmakerApp')
 
     .controller('MatchmakerIndexCtrl', function ($rootScope, $scope, $location, MatchmakerIndex) {
 
-        $rootScope.matchmakerIndex;
         MatchmakerIndex.getIndex().then(function(indexData){
             $rootScope.works = indexData.works;
             console.log($rootScope.works);
@@ -144,15 +143,14 @@ angular.module('matchmakerApp')
 
         MatchmakerIndex.getIndex().then(function(indexData){
             var workURL;
-            var works = indexData.works;
-            for (var i = 0; i < works.length; i++) {
-                if ($scope.workID == works[i].id) {
-                    for (var j = 0; j < works[i].versions.length; j++) {
-                        if ($scope.versionID == works[i].versions[j].id) {
-                            workURL = works[i].versions[j].url;
-                            break;
-                        }
-                    }
+            var works = indexData;
+            var work = works[$scope.workID];
+            if ($scope.versionID) {
+                workURL = work.versions[$scope.versionID];
+            } else {
+                for (var versionID in work.versions) {
+                    workURL = work.versions[versionID].url;
+                    if (work.versions[versionID].default == true) break
                 }
             }
             $scope.getWorkTextAndCounts($scope.workID, workURL);
