@@ -7,48 +7,32 @@
 
 from mrjob.job import MRJob
 import mrjob.protocol
-import os, sys, traceback
+import os, sys, traceback, json
 basedir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 sys.path.insert(0, os.getcwd())
 sys.path.insert(0, '%s/matchmaker'%basedir)
 
 from quotes import QuoteFinder
 import botocore.session
-import requests
-import json
 
 class Job(MRJob):
 	OUTPUT_PROTOCOL = mrjob.protocol.JSONValueProtocol
 
-	def get_named_passages_text(self, work, version=None):
-		try:
-			works = requests.get('https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/index.json').json()
-			work = works.get(work)
-			if version and 'named_passages_url' in work['versions'][version]:
-				return requests.get(work['versions'][version]['named_passages_url']).content
-			else: # get default version
-				for version in work['versions'].values():
-					if version.get('default') == True and 'named_passages_url' in version:
-						return requests.get(version['named_passages_url']).content
-				if 'named_passages_url' in work['versions'].values()[0]:
-					return requests.get(work['versions'].values()[0]['named_passages_url']).content
-		except:
-			sys.stderr.write(traceback.format_exc()+'\n')
-		return None
-
 	def configure_options(self):
 		super(Job, self).configure_options()
-		self.add_passthrough_option('--work', type='str', default='', help='Work to process')
-		self.add_passthrough_option('--version', type='str', default='', help='Work version to process')
+		self.add_file_option('--named-passages', type='str', default='', help='Path to optional named passages file')
 
 	def load_options(self, args):
 		super(Job, self).load_options(args)
-		self.work = self.options.work
-		self.version = self.options.version
+		self.named_passages_filename = self.options.named_passages
 
 	def mapper_init(self):
+		self.named_passages_text = None
 		try:
-			self.named_passages_text = self.get_named_passages_text(self.work, self.version)
+			if self.named_passages_filename and os.path.exists(os.path.join(os.getcwd(),self.named_passages_filename)):
+				with open(os.path.join(os.getcwd(),self.named_passages_filename),'r') as named_passages_file:
+					self.named_passages_text = named_passages_file.read()
+				sys.stderr.write('named_passages_filename=%s size=%s\n'%(self.named_passages_filename,len(self.named_passages_text)))
 			session = botocore.session.get_session()
 			aws_access_key_id = os.environ.get('AWS_ACCESS_KEY_ID')
 			aws_secret_access_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -61,15 +45,16 @@ class Job(MRJob):
 			#raise
 
 	def mapper(self, key, docid):
-		self.increment_counter('counters', 'all_docs', 1)
 		try_plain = True
+		quotes = None
 		try:
+			self.increment_counter('counters', 'all_docs', 1)
 			response_data = self.s3_client.get_object(Bucket='ithaka-labs', Key='files/coord-text/%s'%(docid))
 			if response_data['ResponseMetadata']['HTTPStatusCode'] == 200 and response_data:
 				serialized_doc = response_data['Body'].read()
 				if serialized_doc:
 					coords_text_doc = json.loads(serialized_doc)
-					quotes = QuoteFinder(is_coords=True, named_passages=self.named_passages_text).quotes_from_coords_doc(coords_text_doc)
+					#quotes = QuoteFinder(is_coords=True, named_passages=self.named_passages_text).quotes_from_coords_doc(coords_text_doc)
 					try_plain = False
 					self.increment_counter('counters', 'coords_docs', 1)
 					self.increment_counter('counters', 'coords_quotes', len(quotes))
@@ -88,7 +73,7 @@ class Job(MRJob):
 					serialized_doc = response_data['Body'].read()
 					if serialized_doc:
 						text_doc = json.loads(serialized_doc)
-						quotes = QuoteFinder(is_coords=False).quotes_from_plain_doc(text_doc['text'])
+						#quotes = QuoteFinder(is_coords=False).quotes_from_plain_doc(text_doc['text'])
 						self.increment_counter('counters', 'plain_docs', 1)
 						self.increment_counter('counters', 'plain_quotes', len(quotes))
 						if quotes:
