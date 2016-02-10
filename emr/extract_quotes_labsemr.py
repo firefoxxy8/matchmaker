@@ -49,6 +49,7 @@ class Job(MRJob):
 		quotes = None
 		try:
 			self.increment_counter('counters', 'all_docs', 1)
+			self.increment_counter('counters', 'coords_docs_attempted', 1)
 			response_data = self.s3_client.get_object(Bucket='ithaka-labs', Key='files/coord-text/%s'%(docid))
 			if response_data['ResponseMetadata']['HTTPStatusCode'] == 200 and response_data:
 				serialized_doc = response_data['Body'].read()
@@ -56,30 +57,32 @@ class Job(MRJob):
 					coords_text_doc = json.loads(serialized_doc)
 					quotes = QuoteFinder(is_coords=True, named_passages=self.named_passages_text).quotes_from_coords_doc(coords_text_doc)
 					try_plain = False
-					self.increment_counter('counters', 'coords_docs', 1)
+					self.increment_counter('counters', 'coords_docs_processed', 1)
 					self.increment_counter('counters', 'coords_quotes', len(quotes))
 					if quotes:
 						yield key, {'id': docid, 'quotes': quotes}
 		except:
-			self.increment_counter('counters', 'failed_coords_doc', 1)
+			self.increment_counter('counters', 'coords_docs_failed', 1)
 			sys.stderr.write(traceback.format_exc())
 			sys.stderr.write(docid)
 			#raise
 
 		if try_plain:
 			try:
+				self.increment_counter('counters', 'plain_docs_attempted', 1)
 				response_data = self.s3_client.get_object(Bucket='ithaka-labs', Key='files/text/%s'%(docid))
 				if response_data['ResponseMetadata']['HTTPStatusCode'] == 200 and response_data:
 					serialized_doc = response_data['Body'].read()
 					if serialized_doc:
 						text_doc = json.loads(serialized_doc)
 						quotes = QuoteFinder(is_coords=False).quotes_from_plain_doc(text_doc['text'])
-						self.increment_counter('counters', 'plain_docs', 1)
+						self.increment_counter('counters', 'plain_docs_processed', 1)
 						self.increment_counter('counters', 'plain_quotes', len(quotes))
 						if quotes:
 							yield key, {'id': docid, 'quotes': quotes}
 			except:
-				self.increment_counter('counters', 'failed_processing', 1)
+				self.increment_counter('counters', 'plain_docs_failed', 1)
+				self.increment_counter('counters', 'all_docs_failed', 1)
 				sys.stderr.write(traceback.format_exc())
 				sys.stderr.write(docid)
 
