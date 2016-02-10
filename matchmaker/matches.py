@@ -12,7 +12,6 @@ import bs4
 from bs4 import BeautifulSoup
 from copy import deepcopy
 
-#import textile
 from markdown2 import Markdown
 
 rex = re.compile(r'\W+')
@@ -23,7 +22,7 @@ def normalize(s):
 
 ws = set([u'\n',u'\r',u'\t',u' ',u'\f'])
 
-def prep_text(indata, combine=False):
+def prep_text(indata):
 	if isinstance(indata,str): indata = unicode(indata,'utf-8')
 
 	def _parse(elem, ids, text_chunks, id_seqs):
@@ -45,11 +44,7 @@ def prep_text(indata, combine=False):
 				_parse(child, deepcopy(ids)+[chunk_id], text_chunks, id_seqs)
 
 	text = u'\n'.join([l.rstrip() for l in indata.split(u'\n')])
-	#html = textile.textile(text)
-	#sys.stderr.write(html+'\n')
 	html = Markdown().convert(text)
-	#sys.stderr.write(html+'\n')
-	if combine: html = html.replace(u'<br />','')
 	text_chunks = []
 
 	_parse(BeautifulSoup(html, 'html.parser'), [], text_chunks, {})
@@ -119,14 +114,13 @@ class QuoteMatcher(object):
 		if self.debug:      logger.setLevel(logging.DEBUG)
 		self.work_path      = kwargs.get('work_path')
 		self.work           = kwargs.get('work')
-		self.combine        = kwargs.get('combine', False)
 
-		logger.info('work_path=%s combine=%s'%(self.work_path, self.combine))
+		logger.info('work_path=%s'%(self.work_path))
 
 		if self.work_path and os.path.exists(self.work_path):
 			with open(self.work_path,'rb') as work_file:
 				self.work = work_file.read()
-		self.original_text, self.normalized_text, self.pos_map, self.chunks = prep_text(self.work, self.combine)
+		self.original_text, self.normalized_text, self.pos_map, self.chunks = prep_text(self.work)
 
 	def match_quote(self, quote):
 		try:
@@ -182,17 +176,16 @@ class QuoteMatcher(object):
 
 
 def usage():
-	print(' %s [hvdw:c]' % sys.argv[0])
+	print(' %s [hvdw:]' % sys.argv[0])
 	print('   -h --help           Print help message')
 	print('   -v --verbose        Info logging output')
 	print('   -d --debug          Debug logging output')
 	print('   -w --work           Path to work file')
-	print('   -c --combine        Combine adjacent lines into singleparagraph')
 
 if __name__ == '__main__':
 	kwargs = {}
 	try:
-		opts, docids = getopt.getopt(sys.argv[1:], 'hvdw:c', ['help','verbose','debug','work','combine'])
+		opts, docids = getopt.getopt(sys.argv[1:], 'hvdw:c', ['help','verbose','debug','work'])
 	except getopt.GetoptError as err:
 		# print help information and exit:
 		print(str(err)) # will print something like "option -a not recognized"
@@ -206,8 +199,6 @@ if __name__ == '__main__':
 			kwargs['debug'] = True
 		elif o in ("-w", "--work"):
 			kwargs['work_path'] = a
-		elif o in ("-c", "--combine"):
-			kwargs['combine'] = True
 		elif o in ("-h", "--help"):
 			usage()
 			sys.exit()
