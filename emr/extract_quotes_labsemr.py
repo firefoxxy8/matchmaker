@@ -54,7 +54,7 @@ class Job(MRJob):
 				serialized_doc = response_data['Body'].read()
 				if serialized_doc:
 					coords_text_doc = json.loads(serialized_doc)
-					#quotes = QuoteFinder(is_coords=True, named_passages=self.named_passages_text).quotes_from_coords_doc(coords_text_doc)
+					quotes = QuoteFinder(is_coords=True, named_passages=self.named_passages_text).quotes_from_coords_doc(coords_text_doc)
 					try_plain = False
 					self.increment_counter('counters', 'coords_docs', 1)
 					self.increment_counter('counters', 'coords_quotes', len(quotes))
@@ -73,7 +73,7 @@ class Job(MRJob):
 					serialized_doc = response_data['Body'].read()
 					if serialized_doc:
 						text_doc = json.loads(serialized_doc)
-						#quotes = QuoteFinder(is_coords=False).quotes_from_plain_doc(text_doc['text'])
+						quotes = QuoteFinder(is_coords=False).quotes_from_plain_doc(text_doc['text'])
 						self.increment_counter('counters', 'plain_docs', 1)
 						self.increment_counter('counters', 'plain_quotes', len(quotes))
 						if quotes:
