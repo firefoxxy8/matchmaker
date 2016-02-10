@@ -5,7 +5,7 @@
 
 	Usage examples:
 
-	python match_quotes_labsemr.py -c matchmaker_mrjob.conf -r emr --no-output -o s3://ithaka-labs/matchmaker/XXXX/matches --work XXXX --combine [true|false] s3://ithaka-labs/matchmaker/XXXX/extracted-quotes/*
+	python match_quotes_labsemr.py -c matchmaker_mrjob.conf -r emr --no-output -o s3://ithaka-labs/matchmaker/XXXX/matches --work XXXX s3://ithaka-labs/matchmaker/XXXX/extracted-quotes/*
 
 '''
 
@@ -24,13 +24,11 @@ class MatchQuotedText(MRJob):
 	def configure_options(self):
 		super(MatchQuotedText, self).configure_options()
 		self.add_file_option('--work', type='str', default='', help='Path to work doc')
-		self.add_passthrough_option('--combine', type='str', default='true', help='Combine adjacent lines')
 		self.work_filename = self.options.work
 
 	def load_options(self, args):
 		super(MatchQuotedText, self).load_options(args)
 		self.work_filename = self.options.work
-		self.combine = self.options.combine == 'true'
 
 	def mapper_init(self):
 		work = None
@@ -38,7 +36,7 @@ class MatchQuotedText(MRJob):
 			with open(os.path.join(os.getcwd(),self.work_filename),'r') as work_file:
 				work = work_file.read()
 			sys.stderr.write('named_passages_filename=%s size=%s\n'%(self.named_passages_filename,len(self.named_passages_text)))
-			self.quote_matcher = QuoteMatcher(work=work, combine=self.combine)
+			self.quote_matcher = QuoteMatcher(work=work)
 
 	def mapper(self, _, line):
 		try:
