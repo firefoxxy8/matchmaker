@@ -4,7 +4,7 @@
 
 <p id="inferno-i-1">Midway upon the journey of our life  
 I found myself within a forest dark,  
-For the straightforward pathway had been lost.
+For the straightforward pathway had been lost.  
 </p>
 
 <p id="inferno-i-4">Ah me! how hard a thing it is to say
