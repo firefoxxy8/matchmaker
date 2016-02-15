@@ -1,7 +1,23 @@
 <!doctype html> <html ng-app="matchmakerApp"> <head> <!-- <base href="/"> --> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.7aa3bf81.css"> </head> <body> <!--[if lte IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
-<![endif]--> <!-- Add your site or application content here --> <div ng-app="" ng-include="'partials/global_header.html'"></div> <div id="main" class="container-fluid"> <div ng-view=""></div> </div> <!--
+<![endif]--> <!-- Add your site or application content here --> <!-- <div ng-app="" ng-include="'partials/global_header.html'"></div> --> <div id="nav-header"> <!--[if lt IE 8]>
+                        <div class="alert alert-danger">
+                            <p><b>You are using an outdated browser!</b></p>
+                            <p>This can lead to some serious problems and is generally unsafe!</p>
+                            <p>Please use a new version of <a href='http://www.mozilla.org/firefox'>Firefox</a>, <a href='http://www.google.com/chrome'>Chrome</a> or <a href='http://www.apple.com/safari'>Safari</a>.</p>
+                        </div>
+                    <![endif]--> <!-- <a href="/" class="label label-jstor-red">{{ site.name }}</a>--> <a href="/" class="nav-label nav-label-jstor-red" data-toggle="tooltip" title="Home"> <i class="fa fa-home"></i> </a> <a href="/blog/" class="nav-label nav-label-jstor-red" data-toggle="tooltip" title="Blog"> <i class="fa fa-list-alt"></i> </a> <a href="/projects/" class="nav-label nav-label-jstor-red" data-toggle="tooltip" title="Projects"> <i class="fa fa-folder-o"></i> </a> <!-- 
+                    <a href="/feed.xml" class="label label-jstor-red" data-toggle="tooltip" title="RSS">
+                        <i class="fa fa-rss"></i>
+                    </a>
+                    <a href="{{ site.author.github_link }}" class="label label-jstor-red" data-toggle="tooltip" title="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="{{ site.author.twitter_link }}" class="label label-jstor-red" data-toggle="tooltip" title="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    --> </div> <div id="main" class="container-fluid"> <div ng-view=""></div> </div> <!--
 <div class="footer">
     <div class="container"></div>
 </div>
