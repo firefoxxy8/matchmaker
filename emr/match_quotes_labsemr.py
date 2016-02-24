@@ -24,7 +24,6 @@ class MatchQuotedText(MRJob):
 	def configure_options(self):
 		super(MatchQuotedText, self).configure_options()
 		self.add_file_option('--work', type='str', default='', help='Path to work doc')
-		self.work_filename = self.options.work
 
 	def load_options(self, args):
 		super(MatchQuotedText, self).load_options(args)
@@ -35,7 +34,6 @@ class MatchQuotedText(MRJob):
 		if self.work_filename and os.path.exists(os.path.join(os.getcwd(),self.work_filename)):
 			with open(os.path.join(os.getcwd(),self.work_filename),'r') as work_file:
 				work = work_file.read()
-			sys.stderr.write('named_passages_filename=%s size=%s\n'%(self.named_passages_filename,len(self.named_passages_text)))
 			self.quote_matcher = QuoteMatcher(work=work)
 
 	def mapper(self, _, line):

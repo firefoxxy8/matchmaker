@@ -17,6 +17,7 @@ import botocore.session
 
 class Job(MRJob):
 	OUTPUT_PROTOCOL = mrjob.protocol.JSONValueProtocol
+	#OUTPUT_PROTOCOL = mrjob.protocol.RawProtocol
 
 	def configure_options(self):
 		super(Job, self).configure_options()
@@ -53,7 +54,7 @@ class Job(MRJob):
 			response_data = self.s3_client.get_object(Bucket='ithaka-labs', Key='files/coord-text/%s'%(docid))
 			if response_data['ResponseMetadata']['HTTPStatusCode'] == 200 and response_data:
 				serialized_doc = response_data['Body'].read()
-				if serialized_doc:
+				if serialized_doc and len(serialized_doc) <= 40000000:
 					coords_text_doc = json.loads(serialized_doc)
 					quotes = QuoteFinder(is_coords=True, named_passages=self.named_passages_text).quotes_from_coords_doc(coords_text_doc)
 					try_plain = False
@@ -61,6 +62,7 @@ class Job(MRJob):
 					self.increment_counter('counters', 'coords_quotes', len(quotes))
 					if quotes:
 						yield key, {'id': docid, 'quotes': quotes}
+					#yield docid, str(len(serialized_doc))
 		except:
 			self.increment_counter('counters', 'coords_docs_failed', 1)
 			sys.stderr.write(traceback.format_exc())
@@ -73,13 +75,15 @@ class Job(MRJob):
 				response_data = self.s3_client.get_object(Bucket='ithaka-labs', Key='files/text/%s'%(docid))
 				if response_data['ResponseMetadata']['HTTPStatusCode'] == 200 and response_data:
 					serialized_doc = response_data['Body'].read()
-					if serialized_doc:
+					if serialized_doc and len(serialized_doc) <= 40000000:
+						yield key, {'id': docid, 'quotes': quotes}
 						text_doc = json.loads(serialized_doc)
 						quotes = QuoteFinder(is_coords=False).quotes_from_plain_doc(text_doc['text'])
 						self.increment_counter('counters', 'plain_docs_processed', 1)
 						self.increment_counter('counters', 'plain_quotes', len(quotes))
 						if quotes:
 							yield key, {'id': docid, 'quotes': quotes}
+						#yield docid, str(len(serialized_doc))
 			except:
 				self.increment_counter('counters', 'plain_docs_failed', 1)
 				self.increment_counter('counters', 'all_docs_failed', 1)
