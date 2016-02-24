@@ -6,11 +6,11 @@
     "versions": {
       "italian": {
         "label": "Gutenberg Italian",
-        "url": "http://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_italian.md"
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_italian.md"
       },
       "longfellow": {
         "label": "Gutenberg English (Longfellow)",
-        "url": "http://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_longfellow.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/the_divine_comedy/gutenberg_longfellow.md",
         "default": true
       }
     }
@@ -20,7 +20,7 @@
     "title": "The United States Constitution",
     "versions": {
       "default": {
-        "url": "http://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/us_constitution.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/us_constitution.md",
         "named_passages_url": "http://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/us_constitution/named_passages.tsv",
         "default": true
       }
