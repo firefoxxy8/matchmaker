@@ -5,7 +5,7 @@
 
 	Usage examples:
 
-	python match_quotes_labsemr.py -c matchmaker_mrjob.conf -r emr --no-output -o s3://ithaka-labs/matchmaker/XXXX/matches --work XXXX s3://ithaka-labs/matchmaker/XXXX/extracted-quotes/*
+	python match_quotes_labsemr.py -c matchmaker_mrjob.conf -r emr --no-output -o s3://ithaka-labs/matchmaker/XXXX/matches --work XXXX --plain [true|false] s3://ithaka-labs/matchmaker/XXXX/extracted-quotes/*
 
 '''
 
@@ -24,29 +24,33 @@ class MatchQuotedText(MRJob):
 	def configure_options(self):
 		super(MatchQuotedText, self).configure_options()
 		self.add_file_option('--work', type='str', default='', help='Path to work doc')
+		self.add_passthrough_option('--plain', type='str', default='false', help='Source text is plain text')
 
 	def load_options(self, args):
 		super(MatchQuotedText, self).load_options(args)
 		self.work_filename = self.options.work
+		self.plain_text = self.options.plain == 'true'
 
 	def mapper_init(self):
+		#sys.stderr.write('work=%s plain=%s\n'%(self.work_filename,self.plain_text))
 		work = None
 		if self.work_filename and os.path.exists(os.path.join(os.getcwd(),self.work_filename)):
 			with open(os.path.join(os.getcwd(),self.work_filename),'r') as work_file:
 				work = work_file.read()
-			self.quote_matcher = QuoteMatcher(work=work)
+			self.quote_matcher = QuoteMatcher(work=work, plain_text=self.plain_text)
 
 	def mapper(self, _, line):
 		try:
 			self.increment_counter('counters', 'documents_evaluated', 1)
 			quotes_data = json.loads(line)
-			for quote in quotes_data['quotes']:
-				quote['id'] = quotes_data['id']
-				self.increment_counter('counters', 'quotes_evaluated', 1)
-				if self.quote_matcher.match_quote(quote):
-					self.increment_counter('counters', 'matches', 1)
-					if len(quote['matched_text']) >= 20 and quote['similarity'] >= 0.90: self.increment_counter('counters', 'high_confidence_matches', 1)
-					yield (quote['id'], quote)
+			if quotes_data['quotes']:
+				for quote in quotes_data['quotes']:
+					quote['id'] = quotes_data['id']
+					self.increment_counter('counters', 'quotes_evaluated', 1)
+					if self.quote_matcher.match_quote(quote):
+						self.increment_counter('counters', 'matches', 1)
+						if len(quote['matched_text']) >= 20 and quote['similarity'] >= 0.90: self.increment_counter('counters', 'high_confidence_matches', 1)
+						yield (quote['id'], quote)
 		except KeyboardInterrupt:
 			raise
 		except:

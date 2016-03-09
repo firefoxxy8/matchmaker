@@ -22,7 +22,7 @@ def normalize(s):
 
 ws = set([u'\n',u'\r',u'\t',u' ',u'\f'])
 
-def prep_text(indata):
+def prep_text(indata, plain_text):
 	if isinstance(indata,str): indata = unicode(indata,'utf-8')
 
 	def _parse(elem, ids, text_chunks, id_seqs):
@@ -43,11 +43,17 @@ def prep_text(indata):
 				id_seqs[chunk_id] = 0
 				_parse(child, deepcopy(ids)+[chunk_id], text_chunks, id_seqs)
 
-	text = u'\n'.join([l.rstrip() for l in indata.split(u'\n')])
-	html = Markdown().convert(text)
+	lines = [l.rstrip() for l in indata.split(u'\n')]
+	text = u'\n'.join(lines)
+
 	text_chunks = []
 
-	_parse(BeautifulSoup(html, 'html.parser'), [], text_chunks, {})
+	if plain_text:
+		for seq,line in enumerate(lines):
+			text_chunks.append([['line-%s'%(seq+1)],line])
+	else:  # markdown
+		html = Markdown().convert(text)
+		_parse(BeautifulSoup(html, 'html.parser'), [], text_chunks, {})
 
 	original_text = u' '.join([tc[1] for tc in text_chunks])
 
@@ -58,6 +64,7 @@ def prep_text(indata):
 	for rec in text_chunks:
 		chunk_ids = rec[0]
 		text_chunk = rec[1]
+		#logger.info('%s %s'%(chunk_ids,text_chunk))
 		normalized_chunk = []
 		chunk_offset = 0
 		for char in text_chunk:
@@ -114,13 +121,14 @@ class QuoteMatcher(object):
 		if self.debug:      logger.setLevel(logging.DEBUG)
 		self.work_path      = kwargs.get('work_path')
 		self.work           = kwargs.get('work')
+		self.plain_text     = kwargs.get('plain_text', False)
 
-		logger.info('work_path=%s'%(self.work_path))
+		logger.info('work_path=%s plain_text=%s'%(self.work_path, self.plain_text))
 
 		if self.work_path and os.path.exists(self.work_path):
 			with open(self.work_path,'rb') as work_file:
 				self.work = work_file.read()
-		self.original_text, self.normalized_text, self.pos_map, self.chunks = prep_text(self.work)
+		self.original_text, self.normalized_text, self.pos_map, self.chunks = prep_text(self.work, self.plain_text)
 
 	def match_quote(self, quote):
 		try:
@@ -176,16 +184,17 @@ class QuoteMatcher(object):
 
 
 def usage():
-	print(' %s [hvdw:]' % sys.argv[0])
+	print(' %s [hvdw:p]' % sys.argv[0])
 	print('   -h --help           Print help message')
 	print('   -v --verbose        Info logging output')
 	print('   -d --debug          Debug logging output')
 	print('   -w --work           Path to work file')
+	print('   -p --plain          Plain text')
 
 if __name__ == '__main__':
 	kwargs = {}
 	try:
-		opts, docids = getopt.getopt(sys.argv[1:], 'hvdw:c', ['help','verbose','debug','work'])
+		opts, docids = getopt.getopt(sys.argv[1:], 'hvdw:p', ['help','verbose','debug','work','plain'])
 	except getopt.GetoptError as err:
 		# print help information and exit:
 		print(str(err)) # will print something like "option -a not recognized"
@@ -199,6 +208,8 @@ if __name__ == '__main__':
 			kwargs['debug'] = True
 		elif o in ("-w", "--work"):
 			kwargs['work_path'] = a
+		elif o in ("-p", "--plain"):
+			kwargs['plain_text'] = True
 		elif o in ("-h", "--help"):
 			usage()
 			sys.exit()
