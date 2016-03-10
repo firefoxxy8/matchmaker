@@ -1,7 +1,7 @@
 <p id="rem-1">Portrait of an Elderly Man Seated, possibly Pieter de la Tombe</p>
 <p id="rem-2">The Holy Family</p>
 <p id="rem-3">Portrait of a Young Woman with a Fan</p>
-<p id="rem-4">Equestrian Portrait of Frederick Rihel</p>
+<p id="rem-4">Equestrian Portrait of Frederick Rihel</p>  
 <p id="rem-5">The Prophetess Anna in the Temple</p>
 <p id="rem-6">The Ascension</p>
 <p id="rem-7">David with the Head of Goliath before Saul</p>
