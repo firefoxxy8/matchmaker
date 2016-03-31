@@ -13,7 +13,7 @@ import json
 import slumber
 
 DEFAULT_API_HOST = 'https://labs.jstor.org'
-FIELDS           = 'article_type,discipline_names,journal,keyterms,_keyterms,keyterm_weights,pubdate,publisher,tags,title,topics,_topics,topic_weights'
+FIELDS           = 'article_type,authors,cite,discipline_names,first_page,issue,jcode,journal,keyterms,_keyterms,keyterm_weights,last_page,pubdate,publisher,tags,title,topics,_topics,topic_weights,volume,year'
 
 class Metadata(object):
 	def __init__(self, **kwargs):
@@ -35,9 +35,10 @@ class Metadata(object):
 			metadata = {}
 		return metadata
 
-	def add_metadata(self, obj):
-		metadata = self._get_metadata(obj['id'])
-		logger.info('id=%s has_metadata=%s'%(obj['id'],metadata is not None))
+	def add_metadata(self, obj, id=None):
+		docid = obj.get('id',id)
+		metadata = self._get_metadata(docid)
+		logger.info('id=%s has_metadata=%s'%(docid,metadata is not None))
 		if metadata:
 			if 'pubdate' in metadata:
 				metadata['pubdate'] = '%s-%s-%s'%(metadata['pubdate'][:4],metadata['pubdate'][4:6],metadata['pubdate'][6:8])
@@ -93,7 +94,9 @@ if __name__ == '__main__':
 	metadata = Metadata(**kwargs)
 	for lineno, line in enumerate(sys.stdin):
 		try:
-			sys.stdout.write('%s\n'%(json.dumps(metadata.add_metadata(deserialize(line)), sort_keys=True)))
+			fields = line.strip().split('\t')
+			id = fields[0] if len(fields) > 1 else None
+			sys.stdout.write('%s\n'%(json.dumps(metadata.add_metadata(deserialize(fields[-1]),id=id), sort_keys=True)))
 		except:
 			logger.debug(traceback.format_exc())
 			logger.debug('line=%s'%lineno)
