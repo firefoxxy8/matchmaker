@@ -12,6 +12,8 @@ import traceback
 import json
 import slumber
 
+from db import KyotocabinetDatabase as DB
+
 DEFAULT_API_HOST = 'https://labs.jstor.org'
 FIELDS           = 'article_type,authors,cite,discipline_names,first_page,issue,jcode,journal,keyterms,_keyterms,keyterm_weights,last_page,pubdate,publisher,tags,title,topics,_topics,topic_weights,volume,year'
 
@@ -24,16 +26,22 @@ class Metadata(object):
 		self.api_password        = kwargs.get('api_password', os.environ.get('API_PASSWORD'))
 		logger.setLevel(logging.DEBUG if self.debug else logging.INFO if self.verbose else logging.WARNING)
 
+        self.cache               = DB(name='metadata')
 		self.api                 = slumber.API('%s/api/'%self.api_host, auth=(self.api_user, self.api_password))
 
-	def _get_metadata(self, docid):
-		try:
-			metadata = self.api.metadata(docid).get(fields=FIELDS)
-		except KeyboardInterrupt:
-			logger.info(traceback.format_exc())
-		except:
-			metadata = {}
-		return metadata
+    def _get_metadata(self, docid):
+        metadata = {}
+        if docid in self.cache:
+            metadata = json.loads(self.cache[docid])
+        else:
+            try:
+                metadata = self.api.metadata(docid).get(fields=FIELDS)
+                self.cache[docid] = json.dumps(metadata)
+            except KeyboardInterrupt:
+                logger.info(traceback.format_exc())
+            except:
+                pass
+        return metadata
 
 	def add_metadata(self, obj, id=None):
 		docid = obj.get('id',id)
