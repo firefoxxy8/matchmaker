@@ -25,6 +25,16 @@
         "default": true
       }
     }
+  },
+  
+  "bible-job": {
+    "title": "King James Bible - Job",
+    "versions": {
+      "default": {
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/job.md",
+        "default": true
+      }
+    }
   }
 
 }
