@@ -6,6 +6,6 @@ if __name__ == '__main__':
     for line in sys.stdin:
         tokens = line.strip().split('{')[0].split()
         if len(tokens) >= 3:
-            id = '-'.join(tokens[:2]).lower()
+            chunkId = '-'.join(tokens[:2]).lower().replace(':','-')
             text = ' '.join(tokens[2:]).replace('[','<i>').replace(']','</i>')
-            print('<p id="%s">%s</p>\n' % (id, text))
+            print('<p id="%s">%s</p>\n' % (chunkId, text))
