@@ -35,6 +35,16 @@
         "default": true
       }
     }
+  },
+
+  "bible-genesis": {
+    "title": "King James Bible - Genesis",
+    "versions": {
+      "default": {
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/genesis.md",
+        "default": true
+      }
+    }
   }
 
 }
