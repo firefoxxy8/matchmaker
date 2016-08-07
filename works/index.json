@@ -45,6 +45,16 @@
         "default": true
       }
     }
+  },
+
+  "bible-exodus": {
+    "title": "King James Bible - Exodus",
+    "versions": {
+      "default": {
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/exodus.md",
+        "default": true
+      }
+    }
   }
 
 }
