@@ -57,6 +57,16 @@
     }
   },
 
+  "bible-proverbs": {
+    "title": "King James Bible - Proverbs",
+    "versions": {
+      "default": {
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/proverbs.md",
+        "default": true
+      }
+    }
+  },
+
   "bible-psalms": {
     "title": "King James Bible - Psalms",
     "versions": {
