@@ -54,11 +54,9 @@ angular.module('matchmakerApp')
                 MatchmakerText.getText(workURL)
             ]).then(function (values) {
                 var quoteCounts = values[0];
-                //console.log(quoteCounts);
+                console.log(quoteCounts);
                 var workText = values[1];
                 //console.log(workText);
-
-                marked(workText, { renderer: renderer });
 
                 $scope.root = {id: 'root', children: []};
 
@@ -71,7 +69,7 @@ angular.module('matchmakerApp')
                         parent = parent.children.slice(-1)[0];
                     }
 
-                    //console.log('heading','h'+level,text);
+                    console.log('heading','h'+level,text);
                     var new_node = {
                         type: 'group',
                         id: null,
@@ -101,7 +99,7 @@ angular.module('matchmakerApp')
                     var el = document.createElement( 'div' );
                     el.innerHTML = text;
                     var paragraphs = el.getElementsByTagName('p');
-                    if (paragraphs.length == 1) {
+                    if (paragraphs && paragraphs.length == 1) {
                         var para_id = paragraphs[0].id;
                         var para_text = paragraphs[0].innerHTML;
                         //console.log('html paragraph',chunk_id,chunk_text);
@@ -115,16 +113,21 @@ angular.module('matchmakerApp')
                         parent.children.push(para);
 
                         var id_parts = para_id.split('-');
+                        //console.log(id_parts);
                         var parent_node = $scope.root;
                         for (var p = 1; p < id_parts.length; p++) {
-                            var parent_node = parent_node.children[parent_node.children.length - 1];
+                            //console.log(p,id_parts.length);
                             var chunk_Id = id_parts.slice(0, p).join('-');
+                            //console.log(chunk_Id);
+                            //console.log(parent_node);
+                            var parent_node = parent_node.children[parent_node.children.length - 1];
                             parent_node.id = chunk_Id;
                             parent_node.num_quotes = quoteCounts[chunk_Id];
                         }
                     }
                 };
 
+                console.log('render');
                 marked(workText, { renderer: renderer });
 
                 console.log($scope.root);
@@ -418,6 +421,7 @@ angular.module('matchmakerApp')
             var deferred = $q.defer();
             p = deferred.promise;
             var url = 'https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/index.json';
+            console.log(url);
             $http.get(url).then(
                 function(response) {
                     index = response.data;
@@ -435,6 +439,7 @@ angular.module('matchmakerApp')
     .service('MatchmakerText', function ($http, $q) {
         return {
             getText: function (url) {
+                console.log(url);
                 var deferred = $q.defer();
                 $http.get(url).then(
                     function (response) {
@@ -458,9 +463,10 @@ angular.module('matchmakerApp')
             var deferred = d || $q.defer();
             var url = $rootScope.apiBaseURL + '/solr/matchmaker/select/?fq=work:' + work + '&wt=json' +
                 '&fq=similarity:[' + $rootScope.minSimilarity / 100 + '+TO+*]&fq=match_size:[' + $rootScope.minMatchSize + '+TO+*]' +
-                '&fl=score,*&rows=100&fq=chunk_ids:' + chunkID;
+                '&fl=score,*&rows=100&fq=chunk_ids:"' + chunkID +'"';
             url += '&bf=product(similarity,250)';
             url += '&bf=div(match_size,10)';
+            console.log(url);
             $http.get(url, {headers: {'Authorization': 'JWT ' + token}}).then(
                 function (response) {
                     deferred.resolve({'docs': response.data.response.docs});

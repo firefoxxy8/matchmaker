@@ -22,33 +22,34 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div class="header" style="padding-left:0;padding-right:0;border-bottom:none;">
-    <div class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="/">JSTOR Labs</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-                <ul nav-menu="active" class="nav navbar-nav">
-                    <!-- <li><a data-toggle="collapse" data-target=".navbar-collapse" href="{{baseUrl}}matchmaker">Matchmaker</a></li> -->
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="{{baseUrl}}about">About</a></li>
-                </ul>
-
-            </div>
-
-        </div>
-    </div>
-</div>
+<!-- <div ng-app="" ng-include="'partials/global_header.html'"></div> -->
+                <div id="nav-header">
+                    <!--[if lt IE 8]>
+                        <div class="alert alert-danger">
+                            <p><b>You are using an outdated browser!</b></p>
+                            <p>This can lead to some serious problems and is generally unsafe!</p>
+                            <p>Please use a new version of <a href='http://www.mozilla.org/firefox'>Firefox</a>, <a href='http://www.google.com/chrome'>Chrome</a> or <a href='http://www.apple.com/safari'>Safari</a>.</p>
+                        </div>
+                    <![endif]-->
+                    <!-- <a href="/" class="label label-jstor-red">{{ site.name }}</a>-->
+                    <!-- <a href="/" class="nav-label nav-label-jstor-red tooltip-jstor-red" data-toggle="tooltip" title="Home"><i class="fa fa-home"></i></a>
+                    <a href="/blog/" class="nav-label nav-label-jstor-red tooltip-jstor-red" data-toggle="tooltip" title="Blog">
+                        <i class="fa fa-list-alt"></i></a>
+                    <a href="/projects/" class="nav-label nav-label-jstor-red tooltip-jstor-red" data-toggle="tooltip" title="Projects">
+                        <i class="fa fa-folder-o"></i></a>
+                        -->
+                    <!-- 
+                    <a href="/feed.xml" class="label label-jstor-red" data-toggle="tooltip" title="RSS">
+                        <i class="fa fa-rss"></i>
+                    </a>
+                    <a href="{{ site.author.github_link }}" class="label label-jstor-red" data-toggle="tooltip" title="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="{{ site.author.twitter_link }}" class="label label-jstor-red" data-toggle="tooltip" title="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    -->
+                </div>
 
 <div id="main" class="container-fluid">
     <div ng-view=""></div>
@@ -99,5 +100,14 @@
 <script src="scripts/controllers/matchmaker.js"></script>
 <script src="scripts/controllers/matchmaker_helper.js"></script>
 <!-- endbuild -->
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            'placement': 'bottom'
+        });
+    });
+</script>
+
 </body>
 </html>

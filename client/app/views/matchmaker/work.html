@@ -1,7 +1,7 @@
 <script type="text/ng-template" id="node_renderer.html">
     <div class="section-accordion" ng-init="log(node.id)" ng-show="isShown(node)" ng-if="node.type == 'para'">
         <div class="row vertical-align" ng-click="showArticles(node.id)">
-            <div class="col-xs-1" ng-bind-html="node.id.split('-')[2]"></div>
+            <div class="col-xs-1" ng-bind-html="node.id.split('-')[1]"></div>
             <div class="col-xs-11 verse" ng-bind-html="node.text"></div>
             <div class="col-xs-1 text-right quote-count">{{ node.num_quotes | number }}</div>
         </div>
@@ -24,7 +24,9 @@
 
         <!-- Primary text -->
         <div class="col-xs-12 col-md-6">
-            <div ng-repeat="node in root.children" ng-include="'node_renderer.html'"></div>
+            <div resize style="height:{{windowHeight-100}}px;overflow-y:auto;padding:0:margin:0;">
+                <div ng-repeat="node in root.children" ng-include="'node_renderer.html'"></div>
+            </div>
         </div>
 
         <!-- JSTOR matches -->

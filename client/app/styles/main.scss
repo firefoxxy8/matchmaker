@@ -1,7 +1,11 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
 // endbower
+
+$fa-font-path: "/bower_components/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -112,7 +116,7 @@ body {
 }
 
 .quote-count {
-  margin: 0 6px 0 0;
+  margin: 0 18px 0 0;
   padding: 0;
 }
 
@@ -196,4 +200,53 @@ body {
     margin-left: 2.2em;
     margin-right: 1.5em;
     background: #b1b1b1;
+}
+
+#nav-header {
+  padding: 15px 0 35px;
+  text-align: center;
+  font-size: 22px;
+  border-top: 5px solid #700;
+
+}
+
+.nav-label {
+    display: inline;
+    padding: .2em .6em .3em .6em;
+    margin: 0 0.1em;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.nav-label {
+  > a {
+    color: #fff;
+  }
+}
+
+.nav-label-jstor-red {
+  background-color: #770000;
+  border-radius: 0;
+  border: 1px solid #770000;
+  color: #fff;
+  &[href] {
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: #770000;
+    }
+  }
+}
+
+.tooltip-jstor-red + .tooltip > .tooltip-inner {
+  background-color: #770000;
+}
+.tooltip-jstor-red + .tooltip > .tooltip-arrow {
+  border-bottom-color:#770000;
 }

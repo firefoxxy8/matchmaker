@@ -84,7 +84,7 @@ class Indexer(object):
 						'work'        : workid,
 						'version'     : version,
 						'work_text'   : work_text,
-						'chunk_ids'   : [cid for cid in doc.get('chunk_ids',[]) if cid is not None],
+						'chunk_ids'   : [cid for cid_list in doc.get('chunk_ids',[]) for cid in cid_list if cid is not None],
 						'quote_id'    : quote_id,
 						})
 
@@ -111,7 +111,7 @@ class Indexer(object):
 					regions.add(' '.join([str(val) for val in [pnum, ratio, left, width, top, height]]))
 			doc['regions'] = sorted(regions)
 
-		self.expand_chunk_ids(doc)
+		#self.expand_chunk_ids(doc)
 
 		return doc
 
