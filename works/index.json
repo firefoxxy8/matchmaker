@@ -27,11 +27,11 @@
     }
   },
   
-  "bible-job": {
-    "title": "King James Bible - Job",
+  "bible-exodus": {
+    "title": "King James Bible - Exodus",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/job.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/exodus.md",
         "default": true
       }
     }
@@ -47,11 +47,21 @@
     }
   },
 
-  "bible-exodus": {
-    "title": "King James Bible - Exodus",
+  "bible-job": {
+    "title": "King James Bible - Job",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/exodus.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/job.md",
+        "default": true
+      }
+    }
+  },
+
+  "bible-psalms": {
+    "title": "King James Bible - Psalms",
+    "versions": {
+      "default": {
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/psalms.md",
         "default": true
       }
     }
