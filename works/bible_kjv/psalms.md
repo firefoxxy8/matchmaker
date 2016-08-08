@@ -1,4 +1,4 @@
-# Psalms
+# psalms
 
 <p id="psa-1:1">Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful.</p>
 
@@ -36,7 +36,7 @@
 
 <p id="psa-2:12">Kiss the Son, lest he be angry, and ye perish from the way, when his wrath is kindled but a little. Blessed are all they that put their trust in him.</p>
 
-<p id="psa-3:1"><A Psalm of David, when he fled from Absalom his son.> LORD, how are they increased that trouble me! many are they that rise up against me.</p>
+<p id="psa-3:1">LORD, how are they increased that trouble me! many are they that rise up against me.</p>
 
 <p id="psa-3:2">Many there be which say of my soul, There is no help for him in God. Selah.</p>
 
@@ -52,7 +52,7 @@
 
 <p id="psa-3:8">Salvation belongeth unto the LORD: thy blessing is upon thy people. Selah.</p>
 
-<p id="psa-4:1"><To the chief Musician on Neginoth, A Psalm of David.> Hear me when I call, O God of my righteousness: thou hast enlarged me when I was in distress; have mercy upon me, and hear my prayer.</p>
+<p id="psa-4:1">Hear me when I call, O God of my righteousness: thou hast enlarged me when I was in distress; have mercy upon me, and hear my prayer.</p>
 
 <p id="psa-4:2">O ye sons of men, how long will ye turn my glory into shame? how long will ye love vanity, and seek after leasing? Selah.</p>
 
@@ -68,7 +68,7 @@
 
 <p id="psa-4:8">I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.</p>
 
-<p id="psa-5:1"><To the chief Musician upon Nehiloth, A Psalm of David.> Give ear to my words, O LORD, consider my meditation.</p>
+<p id="psa-5:1">Give ear to my words, O LORD, consider my meditation.</p>
 
 <p id="psa-5:2">Hearken unto the voice of my cry, my King, and my God: for unto thee will I pray.</p>
 
@@ -92,7 +92,7 @@
 
 <p id="psa-5:12">For thou, LORD, wilt bless the righteous; with favour wilt thou compass him as with a shield.</p>
 
-<p id="psa-6:1"><To the chief Musician on Neginoth upon Sheminith, A Psalm of David.> O LORD, rebuke me not in thine anger, neither chasten me in thy hot displeasure.</p>
+<p id="psa-6:1">O LORD, rebuke me not in thine anger, neither chasten me in thy hot displeasure.</p>
 
 <p id="psa-6:2">Have mercy upon me, O LORD; for I am weak: O LORD, heal me; for my bones are vexed.</p>
 
@@ -112,7 +112,7 @@
 
 <p id="psa-6:10">Let all mine enemies be ashamed and sore vexed: let them return and be ashamed suddenly.</p>
 
-<p id="psa-7:1"><Shiggaion of David, which he sang unto the LORD, concerning the words of Cush the Benjamite.> O LORD my God, in thee do I put my trust: save me from all them that persecute me, and deliver me:</p>
+<p id="psa-7:1">O LORD my God, in thee do I put my trust: save me from all them that persecute me, and deliver me:</p>
 
 <p id="psa-7:2">Lest he tear my soul like a lion, rending it in pieces, while there is none to deliver.</p>
 
@@ -146,7 +146,7 @@
 
 <p id="psa-7:17">I will praise the LORD according to his righteousness: and will sing praise to the name of the LORD most high.</p>
 
-<p id="psa-8:1"><To the chief Musician upon Gittith, A Psalm of David.> O LORD our Lord, how excellent is thy name in all the earth! who hast set thy glory above the heavens.</p>
+<p id="psa-8:1">O LORD our Lord, how excellent is thy name in all the earth! who hast set thy glory above the heavens.</p>
 
 <p id="psa-8:2">Out of the mouth of babes and sucklings hast thou ordained strength because of thine enemies, that thou mightest still the enemy and the avenger.</p>
 
@@ -164,7 +164,7 @@
 
 <p id="psa-8:9">O LORD our Lord, how excellent is thy name in all the earth!</p>
 
-<p id="psa-9:1"><To the chief Musician upon Muthlabben, A Psalm of David.> I will praise thee, O LORD, with my whole heart; I will shew forth all thy marvellous works.</p>
+<p id="psa-9:1">I will praise thee, O LORD, with my whole heart; I will shew forth all thy marvellous works.</p>
 
 <p id="psa-9:2">I will be glad and rejoice in thee: I will sing praise to thy name, O thou most High.</p>
 
@@ -240,7 +240,7 @@
 
 <p id="psa-10:18">To judge the fatherless and the oppressed, that the man of the earth may no more oppress.</p>
 
-<p id="psa-11:1"><To the chief Musician, A Psalm of David.> In the LORD put I my trust: how say ye to my soul, Flee as a bird to your mountain?</p>
+<p id="psa-11:1">In the LORD put I my trust: how say ye to my soul, Flee as a bird to your mountain?</p>
 
 <p id="psa-11:2">For, lo, the wicked bend their bow, they make ready their arrow upon the string, that they may privily shoot at the upright in heart.</p>
 
@@ -254,7 +254,7 @@
 
 <p id="psa-11:7">For the righteous LORD loveth righteousness; his countenance doth behold the upright.</p>
 
-<p id="psa-12:1"><To the chief Musician upon Sheminith, A Psalm of David.> Help, LORD; for the godly man ceaseth; for the faithful fail from among the children of men.</p>
+<p id="psa-12:1">Help, LORD; for the godly man ceaseth; for the faithful fail from among the children of men.</p>
 
 <p id="psa-12:2">They speak vanity every one with his neighbour: with flattering lips and with a double heart do they speak.</p>
 
@@ -270,7 +270,7 @@
 
 <p id="psa-12:8">The wicked walk on every side, when the vilest men are exalted.</p>
 
-<p id="psa-13:1"><To the chief Musician, A Psalm of David.> How long wilt thou forget me, O LORD? for ever? how long wilt thou hide thy face from me?</p>
+<p id="psa-13:1">How long wilt thou forget me, O LORD? for ever? how long wilt thou hide thy face from me?</p>
 
 <p id="psa-13:2">How long shall I take counsel in my soul, having sorrow in my heart daily? how long shall mine enemy be exalted over me?</p>
 
@@ -282,7 +282,7 @@
 
 <p id="psa-13:6">I will sing unto the LORD, because he hath dealt bountifully with me.</p>
 
-<p id="psa-14:1"><To the chief Musician, A Psalm of David.> The fool hath said in his heart, There is no God. They are corrupt, they have done abominable works, there is none that doeth good.</p>
+<p id="psa-14:1">The fool hath said in his heart, There is no God. They are corrupt, they have done abominable works, there is none that doeth good.</p>
 
 <p id="psa-14:2">The LORD looked down from heaven upon the children of men, to see if there were any that did understand, and seek God.</p>
 
@@ -296,7 +296,7 @@
 
 <p id="psa-14:7">Oh that the salvation of Israel were come out of Zion! when the LORD bringeth back the captivity of his people, Jacob shall rejoice, and Israel shall be glad.</p>
 
-<p id="psa-15:1"><A Psalm of David.> LORD, who shall abide in thy tabernacle? who shall dwell in thy holy hill?</p>
+<p id="psa-15:1">LORD, who shall abide in thy tabernacle? who shall dwell in thy holy hill?</p>
 
 <p id="psa-15:2">He that walketh uprightly, and worketh righteousness, and speaketh the truth in his heart.</p>
 
@@ -306,7 +306,7 @@
 
 <p id="psa-15:5">He that putteth not out his money to usury, nor taketh reward against the innocent. He that doeth these things shall never be moved.</p>
 
-<p id="psa-16:1"><Michtam of David.> Preserve me, O God: for in thee do I put my trust.</p>
+<p id="psa-16:1">Preserve me, O God: for in thee do I put my trust.</p>
 
 <p id="psa-16:2">O my soul, thou hast said unto the LORD, Thou art my Lord: my goodness extendeth not to thee;</p>
 
@@ -328,7 +328,7 @@
 
 <p id="psa-16:11">Thou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.</p>
 
-<p id="psa-17:1"><A Prayer of David.> Hear the right, O LORD, attend unto my cry, give ear unto my prayer, that goeth not out of feigned lips.</p>
+<p id="psa-17:1">Hear the right, O LORD, attend unto my cry, give ear unto my prayer, that goeth not out of feigned lips.</p>
 
 <p id="psa-17:2">Let my sentence come forth from thy presence; let thine eyes behold the things that are equal.</p>
 
@@ -358,7 +358,7 @@
 
 <p id="psa-17:15">As for me, I will behold thy face in righteousness: I shall be satisfied, when I awake, with thy likeness.</p>
 
-<p id="psa-18:1"><To the chief Musician, A Psalm of David, the servant of the LORD, who spake unto the LORD the words of this song in the day that the LORD delivered him from the hand of all his enemies, and from the hand of Saul: And he said,> I will love thee, O LORD, my strength.</p>
+<p id="psa-18:1">I will love thee, O LORD, my strength.</p>
 
 <p id="psa-18:2">The LORD is my rock, and my fortress, and my deliverer; my God, my strength, in whom I will trust; my buckler, and the horn of my salvation, and my high tower.</p>
 
@@ -458,7 +458,7 @@
 
 <p id="psa-18:50">Great deliverance giveth he to his king; and sheweth mercy to his anointed, to David, and to his seed for evermore.</p>
 
-<p id="psa-19:1"><To the chief Musician, A Psalm of David.> The heavens declare the glory of God; and the firmament sheweth his handywork.</p>
+<p id="psa-19:1">The heavens declare the glory of God; and the firmament sheweth his handywork.</p>
 
 <p id="psa-19:2">Day unto day uttereth speech, and night unto night sheweth knowledge.</p>
 
@@ -486,7 +486,7 @@
 
 <p id="psa-19:14">Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight, O LORD, my strength, and my redeemer.</p>
 
-<p id="psa-20:1"><To the chief Musician, A Psalm of David.> The LORD hear thee in the day of trouble; the name of the God of Jacob defend thee;</p>
+<p id="psa-20:1">The LORD hear thee in the day of trouble; the name of the God of Jacob defend thee;</p>
 
 <p id="psa-20:2">Send thee help from the sanctuary, and strengthen thee out of Zion;</p>
 
@@ -504,7 +504,7 @@
 
 <p id="psa-20:9">Save, LORD: let the king hear us when we call.</p>
 
-<p id="psa-21:1"><To the chief Musician, A Psalm of David.> The king shall joy in thy strength, O LORD; and in thy salvation how greatly shall he rejoice!</p>
+<p id="psa-21:1">The king shall joy in thy strength, O LORD; and in thy salvation how greatly shall he rejoice!</p>
 
 <p id="psa-21:2">Thou hast given him his heart's desire, and hast not withholden the request of his lips. Selah.</p>
 
@@ -530,7 +530,7 @@
 
 <p id="psa-21:13">Be thou exalted, LORD, in thine own strength: so will we sing and praise thy power.</p>
 
-<p id="psa-22:1"><To the chief Musician upon Aijeleth Shahar, A Psalm of David.> My God, my God, why hast thou forsaken me? why art thou so far from helping me, and from the words of my roaring?</p>
+<p id="psa-22:1">My God, my God, why hast thou forsaken me? why art thou so far from helping me, and from the words of my roaring?</p>
 
 <p id="psa-22:2">O my God, I cry in the daytime, but thou hearest not; and in the night season, and am not silent.</p>
 
@@ -592,7 +592,7 @@
 
 <p id="psa-22:31">They shall come, and shall declare his righteousness unto a people that shall be born, that he hath done this.</p>
 
-<p id="psa-23:1"><A Psalm of David.> The LORD is my shepherd; I shall not want.</p>
+<p id="psa-23:1">The LORD is my shepherd; I shall not want.</p>
 
 <p id="psa-23:2">He maketh me to lie down in green pastures: he leadeth me beside the still waters.</p>
 
@@ -604,7 +604,7 @@
 
 <p id="psa-23:6">Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.</p>
 
-<p id="psa-24:1"><A Psalm of David.> The earth is the LORD'S, and the fulness thereof; the world, and they that dwell therein.</p>
+<p id="psa-24:1">The earth is the LORD'S, and the fulness thereof; the world, and they that dwell therein.</p>
 
 <p id="psa-24:2">For he hath founded it upon the seas, and established it upon the floods.</p>
 
@@ -624,7 +624,7 @@
 
 <p id="psa-24:10">Who is this King of glory? The LORD of hosts, he is the King of glory. Selah.</p>
 
-<p id="psa-25:1"><A Psalm of David.> Unto thee, O LORD, do I lift up my soul.</p>
+<p id="psa-25:1">Unto thee, O LORD, do I lift up my soul.</p>
 
 <p id="psa-25:2">O my God, I trust in thee: let me not be ashamed, let not mine enemies triumph over me.</p>
 
@@ -668,7 +668,7 @@
 
 <p id="psa-25:22">Redeem Israel, O God, out of all his troubles.</p>
 
-<p id="psa-26:1"><A Psalm of David.> Judge me, O LORD; for I have walked in mine integrity: I have trusted also in the LORD; therefore I shall not slide.</p>
+<p id="psa-26:1">Judge me, O LORD; for I have walked in mine integrity: I have trusted also in the LORD; therefore I shall not slide.</p>
 
 <p id="psa-26:2">Examine me, O LORD, and prove me; try my reins and my heart.</p>
 
@@ -692,7 +692,7 @@
 
 <p id="psa-26:12">My foot standeth in an even place: in the congregations will I bless the LORD.</p>
 
-<p id="psa-27:1"><A Psalm of David.> The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?</p>
+<p id="psa-27:1">The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?</p>
 
 <p id="psa-27:2">When the wicked, even mine enemies and my foes, came upon me to eat up my flesh, they stumbled and fell.</p>
 
@@ -720,7 +720,7 @@
 
 <p id="psa-27:14">Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD.</p>
 
-<p id="psa-28:1"><A Psalm of David.> Unto thee will I cry, O LORD my rock; be not silent to me: lest, if thou be silent to me, I become like them that go down into the pit.</p>
+<p id="psa-28:1">Unto thee will I cry, O LORD my rock; be not silent to me: lest, if thou be silent to me, I become like them that go down into the pit.</p>
 
 <p id="psa-28:2">Hear the voice of my supplications, when I cry unto thee, when I lift up my hands toward thy holy oracle.</p>
 
@@ -738,7 +738,7 @@
 
 <p id="psa-28:9">Save thy people, and bless thine inheritance: feed them also, and lift them up for ever.</p>
 
-<p id="psa-29:1"><A Psalm of David.> Give unto the LORD, O ye mighty, give unto the LORD glory and strength.</p>
+<p id="psa-29:1">Give unto the LORD, O ye mighty, give unto the LORD glory and strength.</p>
 
 <p id="psa-29:2">Give unto the LORD the glory due unto his name; worship the LORD in the beauty of holiness.</p>
 
@@ -760,7 +760,7 @@
 
 <p id="psa-29:11">The LORD will give strength unto his people; the LORD will bless his people with peace.</p>
 
-<p id="psa-30:1"><A Psalm and Song at the dedication of the house of David.> I will extol thee, O LORD; for thou hast lifted me up, and hast not made my foes to rejoice over me.</p>
+<p id="psa-30:1">I will extol thee, O LORD; for thou hast lifted me up, and hast not made my foes to rejoice over me.</p>
 
 <p id="psa-30:2">O LORD my God, I cried unto thee, and thou hast healed me.</p>
 
@@ -784,7 +784,7 @@
 
 <p id="psa-30:12">To the end that my glory may sing praise to thee, and not be silent. O LORD my God, I will give thanks unto thee for ever.</p>
 
-<p id="psa-31:1"><To the chief Musician, A Psalm of David.> In thee, O LORD, do I put my trust; let me never be ashamed: deliver me in thy righteousness.</p>
+<p id="psa-31:1">In thee, O LORD, do I put my trust; let me never be ashamed: deliver me in thy righteousness.</p>
 
 <p id="psa-31:2">Bow down thine ear to me; deliver me speedily: be thou my strong rock, for an house of defence to save me.</p>
 
@@ -832,7 +832,7 @@
 
 <p id="psa-31:24">Be of good courage, and he shall strengthen your heart, all ye that hope in the LORD.</p>
 
-<p id="psa-32:1"><A Psalm of David, Maschil.> Blessed is he whose transgression is forgiven, whose sin is covered.</p>
+<p id="psa-32:1">Blessed is he whose transgression is forgiven, whose sin is covered.</p>
 
 <p id="psa-32:2">Blessed is the man unto whom the LORD imputeth not iniquity, and in whose spirit there is no guile.</p>
 
@@ -898,7 +898,7 @@
 
 <p id="psa-33:22">Let thy mercy, O LORD, be upon us, according as we hope in thee.</p>
 
-<p id="psa-34:1"><A Psalm of David, when he changed his behaviour before Abimelech; who drove him away, and he departed.> I will bless the LORD at all times: his praise shall continually be in my mouth.</p>
+<p id="psa-34:1">I will bless the LORD at all times: his praise shall continually be in my mouth.</p>
 
 <p id="psa-34:2">My soul shall make her boast in the LORD: the humble shall hear thereof, and be glad.</p>
 
@@ -942,7 +942,7 @@
 
 <p id="psa-34:22">The LORD redeemeth the soul of his servants: and none of them that trust in him shall be desolate.</p>
 
-<p id="psa-35:1"><A Psalm of David.> Plead my cause, O LORD, with them that strive with me: fight against them that fight against me.</p>
+<p id="psa-35:1">Plead my cause, O LORD, with them that strive with me: fight against them that fight against me.</p>
 
 <p id="psa-35:2">Take hold of shield and buckler, and stand up for mine help.</p>
 
@@ -998,7 +998,7 @@
 
 <p id="psa-35:28">And my tongue shall speak of thy righteousness and of thy praise all the day long.</p>
 
-<p id="psa-36:1"><To the chief Musician, A Psalm of David the servant of the LORD.> The transgression of the wicked saith within my heart, that there is no fear of God before his eyes.</p>
+<p id="psa-36:1">The transgression of the wicked saith within my heart, that there is no fear of God before his eyes.</p>
 
 <p id="psa-36:2">For he flattereth himself in his own eyes, until his iniquity be found to be hateful.</p>
 
@@ -1022,7 +1022,7 @@
 
 <p id="psa-36:12">There are the workers of iniquity fallen: they are cast down, and shall not be able to rise.</p>
 
-<p id="psa-37:1"><A Psalm of David.> Fret not thyself because of evildoers, neither be thou envious against the workers of iniquity.</p>
+<p id="psa-37:1">Fret not thyself because of evildoers, neither be thou envious against the workers of iniquity.</p>
 
 <p id="psa-37:2">For they shall soon be cut down like the grass, and wither as the green herb.</p>
 
@@ -1102,7 +1102,7 @@
 
 <p id="psa-37:40">And the LORD shall help them, and deliver them: he shall deliver them from the wicked, and save them, because they trust in him.</p>
 
-<p id="psa-38:1"><A Psalm of David, to bring to remembrance.> O LORD, rebuke me not in thy wrath: neither chasten me in thy hot displeasure.</p>
+<p id="psa-38:1">O LORD, rebuke me not in thy wrath: neither chasten me in thy hot displeasure.</p>
 
 <p id="psa-38:2">For thine arrows stick fast in me, and thy hand presseth me sore.</p>
 
@@ -1146,7 +1146,7 @@
 
 <p id="psa-38:22">Make haste to help me, O Lord my salvation.</p>
 
-<p id="psa-39:1"><To the chief Musician, even to Jeduthun, A Psalm of David.> I said, I will take heed to my ways, that I sin not with my tongue: I will keep my mouth with a bridle, while the wicked is before me.</p>
+<p id="psa-39:1">I said, I will take heed to my ways, that I sin not with my tongue: I will keep my mouth with a bridle, while the wicked is before me.</p>
 
 <p id="psa-39:2">I was dumb with silence, I held my peace, even from good; and my sorrow was stirred.</p>
 
@@ -1172,7 +1172,7 @@
 
 <p id="psa-39:13">O spare me, that I may recover strength, before I go hence, and be no more.</p>
 
-<p id="psa-40:1"><To the chief Musician, A Psalm of David.> I waited patiently for the LORD; and he inclined unto me, and heard my cry.</p>
+<p id="psa-40:1">I waited patiently for the LORD; and he inclined unto me, and heard my cry.</p>
 
 <p id="psa-40:2">He brought me up also out of an horrible pit, out of the miry clay, and set my feet upon a rock, and established my goings.</p>
 
@@ -1206,7 +1206,7 @@
 
 <p id="psa-40:17">But I am poor and needy; yet the Lord thinketh upon me: thou art my help and my deliverer; make no tarrying, O my God.</p>
 
-<p id="psa-41:1"><To the chief Musician, A Psalm of David.> Blessed is he that considereth the poor: the LORD will deliver him in time of trouble.</p>
+<p id="psa-41:1">Blessed is he that considereth the poor: the LORD will deliver him in time of trouble.</p>
 
 <p id="psa-41:2">The LORD will preserve him, and keep him alive; and he shall be blessed upon the earth: and thou wilt not deliver him unto the will of his enemies.</p>
 
@@ -1232,7 +1232,7 @@
 
 <p id="psa-41:13">Blessed be the LORD God of Israel from everlasting, and to everlasting. Amen, and Amen.</p>
 
-<p id="psa-42:1"><To the chief Musician, Maschil, for the sons of Korah.> As the hart panteth after the water brooks, so panteth my soul after thee, O God.</p>
+<p id="psa-42:1">As the hart panteth after the water brooks, so panteth my soul after thee, O God.</p>
 
 <p id="psa-42:2">My soul thirsteth for God, for the living God: when shall I come and appear before God?</p>
 
@@ -1264,7 +1264,7 @@
 
 <p id="psa-43:5">Why art thou cast down, O my soul? and why art thou disquieted within me? hope in God: for I shall yet praise him, who is the health of my countenance, and my God.</p>
 
-<p id="psa-44:1"><To the chief Musician for the sons of Korah, Maschil.> We have heard with our ears, O God, our fathers have told us, what work thou didst in their days, in the times of old.</p>
+<p id="psa-44:1">We have heard with our ears, O God, our fathers have told us, what work thou didst in their days, in the times of old.</p>
 
 <p id="psa-44:2">How thou didst drive out the heathen with thy hand, and plantedst them; how thou didst afflict the people, and cast them out.</p>
 
@@ -1316,7 +1316,7 @@
 
 <p id="psa-44:26">Arise for our help, and redeem us for thy mercies' sake.</p>
 
-<p id="psa-45:1"><To the chief Musician upon Shoshannim, for the sons of Korah, Maschil, A Song of loves.> My heart is inditing a good matter: I speak of the things which I have made touching the king: my tongue is the pen of a ready writer.</p>
+<p id="psa-45:1">My heart is inditing a good matter: I speak of the things which I have made touching the king: my tongue is the pen of a ready writer.</p>
 
 <p id="psa-45:2">Thou art fairer than the children of men: grace is poured into thy lips: therefore God hath blessed thee for ever.</p>
 
@@ -1350,7 +1350,7 @@
 
 <p id="psa-45:17">I will make thy name to be remembered in all generations: therefore shall the people praise thee for ever and ever.</p>
 
-<p id="psa-46:1"><To the chief Musician for the sons of Korah, A Song upon Alamoth.> God is our refuge and strength, a very present help in trouble.</p>
+<p id="psa-46:1">God is our refuge and strength, a very present help in trouble.</p>
 
 <p id="psa-46:2">Therefore will not we fear, though the earth be removed, and though the mountains be carried into the midst of the sea;</p>
 
@@ -1372,7 +1372,7 @@
 
 <p id="psa-46:11">The LORD of hosts is with us; the God of Jacob is our refuge. Selah.</p>
 
-<p id="psa-47:1"><To the chief Musician, A Psalm for the sons of Korah.> O clap your hands, all ye people; shout unto God with the voice of triumph.</p>
+<p id="psa-47:1">O clap your hands, all ye people; shout unto God with the voice of triumph.</p>
 
 <p id="psa-47:2">For the LORD most high is terrible; he is a great King over all the earth.</p>
 
@@ -1390,7 +1390,7 @@
 
 <p id="psa-47:9">The princes of the people are gathered together, even the people of the God of Abraham: for the shields of the earth belong unto God: he is greatly exalted.</p>
 
-<p id="psa-48:1"><A Song and Psalm for the sons of Korah.> Great is the LORD, and greatly to be praised in the city of our God, in the mountain of his holiness.</p>
+<p id="psa-48:1">Great is the LORD, and greatly to be praised in the city of our God, in the mountain of his holiness.</p>
 
 <p id="psa-48:2">Beautiful for situation, the joy of the whole earth, is mount Zion, on the sides of the north, the city of the great King.</p>
 
@@ -1418,7 +1418,7 @@
 
 <p id="psa-48:14">For this God is our God for ever and ever: he will be our guide even unto death.</p>
 
-<p id="psa-49:1"><To the chief Musician, A Psalm for the sons of Korah.> Hear this, all ye people; give ear, all ye inhabitants of the world:</p>
+<p id="psa-49:1">Hear this, all ye people; give ear, all ye inhabitants of the world:</p>
 
 <p id="psa-49:2">Both low and high, rich and poor, together.</p>
 
@@ -1458,7 +1458,7 @@
 
 <p id="psa-49:20">Man that is in honour, and understandeth not, is like the beasts that perish.</p>
 
-<p id="psa-50:1"><A Psalm of Asaph.> The mighty God, even the LORD, hath spoken, and called the earth from the rising of the sun unto the going down thereof.</p>
+<p id="psa-50:1">The mighty God, even the LORD, hath spoken, and called the earth from the rising of the sun unto the going down thereof.</p>
 
 <p id="psa-50:2">Out of Zion, the perfection of beauty, God hath shined.</p>
 
@@ -1504,7 +1504,7 @@
 
 <p id="psa-50:23">Whoso offereth praise glorifieth me: and to him that ordereth his conversation aright will I shew the salvation of God.</p>
 
-<p id="psa-51:1"><To the chief Musician, A Psalm of David, when Nathan the prophet came unto him, after he had gone in to Bathsheba.> Have mercy upon me, O God, according to thy lovingkindness: according unto the multitude of thy tender mercies blot out my transgressions.</p>
+<p id="psa-51:1">Have mercy upon me, O God, according to thy lovingkindness: according unto the multitude of thy tender mercies blot out my transgressions.</p>
 
 <p id="psa-51:2">Wash me throughly from mine iniquity, and cleanse me from my sin.</p>
 
@@ -1542,7 +1542,7 @@
 
 <p id="psa-51:19">Then shalt thou be pleased with the sacrifices of righteousness, with burnt offering and whole burnt offering: then shall they offer bullocks upon thine altar.</p>
 
-<p id="psa-52:1"><To the chief Musician, Maschil, A Psalm of David, when Doeg the Edomite came and told Saul, and said unto him, David is come to the house of Ahimelech.> Why boastest thou thyself in mischief, O mighty man? the goodness of God endureth continually.</p>
+<p id="psa-52:1">Why boastest thou thyself in mischief, O mighty man? the goodness of God endureth continually.</p>
 
 <p id="psa-52:2">Thy tongue deviseth mischiefs; like a sharp razor, working deceitfully.</p>
 
@@ -1560,7 +1560,7 @@
 
 <p id="psa-52:9">I will praise thee for ever, because thou hast done it: and I will wait on thy name; for it is good before thy saints.</p>
 
-<p id="psa-53:1"><To the chief Musician upon Mahalath, Maschil, A Psalm of David.> The fool hath said in his heart, There is no God. Corrupt are they, and have done abominable iniquity: there is none that doeth good.</p>
+<p id="psa-53:1">The fool hath said in his heart, There is no God. Corrupt are they, and have done abominable iniquity: there is none that doeth good.</p>
 
 <p id="psa-53:2">God looked down from heaven upon the children of men, to see if there were any that did understand, that did seek God.</p>
 
@@ -1572,7 +1572,7 @@
 
 <p id="psa-53:6">Oh that the salvation of Israel were come out of Zion! When God bringeth back the captivity of his people, Jacob shall rejoice, and Israel shall be glad.</p>
 
-<p id="psa-54:1"><To the chief Musician on Neginoth, Maschil, A Psalm of David, when the Ziphims came and said to Saul, Doth not David hide himself with us?> Save me, O God, by thy name, and judge me by thy strength.</p>
+<p id="psa-54:1">Save me, O God, by thy name, and judge me by thy strength.</p>
 
 <p id="psa-54:2">Hear my prayer, O God; give ear to the words of my mouth.</p>
 
@@ -1586,7 +1586,7 @@
 
 <p id="psa-54:7">For he hath delivered me out of all trouble: and mine eye hath seen his desire upon mine enemies.</p>
 
-<p id="psa-55:1"><To the chief Musician on Neginoth, Maschil, A Psalm of David.> Give ear to my prayer, O God; and hide not thyself from my supplication.</p>
+<p id="psa-55:1">Give ear to my prayer, O God; and hide not thyself from my supplication.</p>
 
 <p id="psa-55:2">Attend unto me, and hear me: I mourn in my complaint, and make a noise;</p>
 
@@ -1632,7 +1632,7 @@
 
 <p id="psa-55:23">But thou, O God, shalt bring them down into the pit of destruction: bloody and deceitful men shall not live out half their days; but I will trust in thee.</p>
 
-<p id="psa-56:1"><To the chief Musician upon Jonathelemrechokim, Michtam of David, when the Philistines took him in Gath.> Be merciful unto me, O God: for man would swallow me up; he fighting daily oppresseth me.</p>
+<p id="psa-56:1">Be merciful unto me, O God: for man would swallow me up; he fighting daily oppresseth me.</p>
 
 <p id="psa-56:2">Mine enemies would daily swallow me up: for they be many that fight against me, O thou most High.</p>
 
@@ -1658,7 +1658,7 @@
 
 <p id="psa-56:13">For thou hast delivered my soul from death: wilt not thou deliver my feet from falling, that I may walk before God in the light of the living?</p>
 
-<p id="psa-57:1"><To the chief Musician, Altaschith, Michtam of David, when he fled from Saul in the cave.> Be merciful unto me, O God, be merciful unto me: for my soul trusteth in thee: yea, in the shadow of thy wings will I make my refuge, until these calamities be overpast.</p>
+<p id="psa-57:1">Be merciful unto me, O God, be merciful unto me: for my soul trusteth in thee: yea, in the shadow of thy wings will I make my refuge, until these calamities be overpast.</p>
 
 <p id="psa-57:2">I will cry unto God most high; unto God that performeth all things for me.</p>
 
@@ -1680,7 +1680,7 @@
 
 <p id="psa-57:11">Be thou exalted, O God, above the heavens: let thy glory be above all the earth.</p>
 
-<p id="psa-58:1"><To the chief Musician, Altaschith, Michtam of David.> Do ye indeed speak righteousness, O congregation? do ye judge uprightly, O ye sons of men?</p>
+<p id="psa-58:1">Do ye indeed speak righteousness, O congregation? do ye judge uprightly, O ye sons of men?</p>
 
 <p id="psa-58:2">Yea, in heart ye work wickedness; ye weigh the violence of your hands in the earth.</p>
 
@@ -1702,7 +1702,7 @@
 
 <p id="psa-58:11">So that a man shall say, Verily there is a reward for the righteous: verily he is a God that judgeth in the earth.</p>
 
-<p id="psa-59:1"><To the chief Musician, Altaschith, Michtam of David; when Saul sent, and they watched the house to kill him.> Deliver me from mine enemies, O my God: defend me from them that rise up against me.</p>
+<p id="psa-59:1">Deliver me from mine enemies, O my God: defend me from them that rise up against me.</p>
 
 <p id="psa-59:2">Deliver me from the workers of iniquity, and save me from bloody men.</p>
 
@@ -1736,7 +1736,7 @@
 
 <p id="psa-59:17">Unto thee, O my strength, will I sing: for God is my defence, and the God of my mercy.</p>
 
-<p id="psa-60:1"><To the chief Musician upon Shushaneduth, Michtam of David, to teach; when he strove with Aramnaharaim and with Aramzobah, when Joab returned, and smote of Edom in the valley of salt twelve thousand.> O God, thou hast cast us off, thou hast scattered us, thou hast been displeased; O turn thyself to us again.</p>
+<p id="psa-60:1">O God, thou hast cast us off, thou hast scattered us, thou hast been displeased; O turn thyself to us again.</p>
 
 <p id="psa-60:2">Thou hast made the earth to tremble; thou hast broken it: heal the breaches thereof; for it shaketh.</p>
 
@@ -1760,7 +1760,7 @@
 
 <p id="psa-60:12">Through God we shall do valiantly: for he it is that shall tread down our enemies.</p>
 
-<p id="psa-61:1"><To the chief Musician upon Neginah, A Psalm of David.> Hear my cry, O God; attend unto my prayer.</p>
+<p id="psa-61:1">Hear my cry, O God; attend unto my prayer.</p>
 
 <p id="psa-61:2">From the end of the earth will I cry unto thee, when my heart is overwhelmed: lead me to the rock that is higher than I.</p>
 
@@ -1776,7 +1776,7 @@
 
 <p id="psa-61:8">So will I sing praise unto thy name for ever, that I may daily perform my vows.</p>
 
-<p id="psa-62:1"><To the chief Musician, to Jeduthun, A Psalm of David.> Truly my soul waiteth upon God: from him cometh my salvation.</p>
+<p id="psa-62:1">Truly my soul waiteth upon God: from him cometh my salvation.</p>
 
 <p id="psa-62:2">He only is my rock and my salvation; he is my defence; I shall not be greatly moved.</p>
 
@@ -1800,7 +1800,7 @@
 
 <p id="psa-62:12">Also unto thee, O Lord, belongeth mercy: for thou renderest to every man according to his work.</p>
 
-<p id="psa-63:1"><A Psalm of David, when he was in the wilderness of Judah.> O God, thou art my God; early will I seek thee: my soul thirsteth for thee, my flesh longeth for thee in a dry and thirsty land, where no water is;</p>
+<p id="psa-63:1">O God, thou art my God; early will I seek thee: my soul thirsteth for thee, my flesh longeth for thee in a dry and thirsty land, where no water is;</p>
 
 <p id="psa-63:2">To see thy power and thy glory, so as I have seen thee in the sanctuary.</p>
 
@@ -1822,7 +1822,7 @@
 
 <p id="psa-63:11">But the king shall rejoice in God; every one that sweareth by him shall glory: but the mouth of them that speak lies shall be stopped.</p>
 
-<p id="psa-64:1"><To the chief Musician, A Psalm of David.> Hear my voice, O God, in my prayer: preserve my life from fear of the enemy.</p>
+<p id="psa-64:1">Hear my voice, O God, in my prayer: preserve my life from fear of the enemy.</p>
 
 <p id="psa-64:2">Hide me from the secret counsel of the wicked; from the insurrection of the workers of iniquity:</p>
 
@@ -1842,7 +1842,7 @@
 
 <p id="psa-64:10">The righteous shall be glad in the LORD, and shall trust in him; and all the upright in heart shall glory.</p>
 
-<p id="psa-65:1"><To the chief Musician, A Psalm and Song of David.> Praise waiteth for thee, O God, in Sion: and unto thee shall the vow be performed.</p>
+<p id="psa-65:1">Praise waiteth for thee, O God, in Sion: and unto thee shall the vow be performed.</p>
 
 <p id="psa-65:2">O thou that hearest prayer, unto thee shall all flesh come.</p>
 
@@ -1868,7 +1868,7 @@
 
 <p id="psa-65:13">The pastures are clothed with flocks; the valleys also are covered over with corn; they shout for joy, they also sing.</p>
 
-<p id="psa-66:1"><To the chief Musician, A Song or Psalm.> Make a joyful noise unto God, all ye lands:</p>
+<p id="psa-66:1">Make a joyful noise unto God, all ye lands:</p>
 
 <p id="psa-66:2">Sing forth the honour of his name: make his praise glorious.</p>
 
@@ -1908,7 +1908,7 @@
 
 <p id="psa-66:20">Blessed be God, which hath not turned away my prayer, nor his mercy from me.</p>
 
-<p id="psa-67:1"><To the chief Musician on Neginoth, A Psalm or Song.> God be merciful unto us, and bless us; and cause his face to shine upon us; Selah.</p>
+<p id="psa-67:1">God be merciful unto us, and bless us; and cause his face to shine upon us; Selah.</p>
 
 <p id="psa-67:2">That thy way may be known upon earth, thy saving health among all nations.</p>
 
@@ -1922,7 +1922,7 @@
 
 <p id="psa-67:7">God shall bless us; and all the ends of the earth shall fear him.</p>
 
-<p id="psa-68:1"><To the chief Musician, A Psalm or Song of David.> Let God arise, let his enemies be scattered: let them also that hate him flee before him.</p>
+<p id="psa-68:1">Let God arise, let his enemies be scattered: let them also that hate him flee before him.</p>
 
 <p id="psa-68:2">As smoke is driven away, so drive them away: as wax melteth before the fire, so let the wicked perish at the presence of God.</p>
 
@@ -1992,7 +1992,7 @@
 
 <p id="psa-68:35">O God, thou art terrible out of thy holy places: the God of Israel is he that giveth strength and power unto his people. Blessed be God.</p>
 
-<p id="psa-69:1"><To the chief Musician upon Shoshannim, A Psalm of David.> Save me, O God; for the waters are come in unto my soul.</p>
+<p id="psa-69:1">Save me, O God; for the waters are come in unto my soul.</p>
 
 <p id="psa-69:2">I sink in deep mire, where there is no standing: I am come into deep waters, where the floods overflow me.</p>
 
@@ -2064,7 +2064,7 @@
 
 <p id="psa-69:36">The seed also of his servants shall inherit it: and they that love his name shall dwell therein.</p>
 
-<p id="psa-70:1"><To the chief Musician, A Psalm of David, to bring to remembrance.> Make haste, O God, to deliver me; make haste to help me, O LORD.</p>
+<p id="psa-70:1">Make haste, O God, to deliver me; make haste to help me, O LORD.</p>
 
 <p id="psa-70:2">Let them be ashamed and confounded that seek after my soul: let them be turned backward, and put to confusion, that desire my hurt.</p>
 
@@ -2122,7 +2122,7 @@
 
 <p id="psa-71:24">My tongue also shall talk of thy righteousness all the day long: for they are confounded, for they are brought unto shame, that seek my hurt.</p>
 
-<p id="psa-72:1"><A Psalm for Solomon.> Give the king thy judgments, O God, and thy righteousness unto the king's son.</p>
+<p id="psa-72:1">Give the king thy judgments, O God, and thy righteousness unto the king's son.</p>
 
 <p id="psa-72:2">He shall judge thy people with righteousness, and thy poor with judgment.</p>
 
@@ -2162,7 +2162,7 @@
 
 <p id="psa-72:20">The prayers of David the son of Jesse are ended.</p>
 
-<p id="psa-73:1"><A Psalm of Asaph.> Truly God is good to Israel, even to such as are of a clean heart.</p>
+<p id="psa-73:1">Truly God is good to Israel, even to such as are of a clean heart.</p>
 
 <p id="psa-73:2">But as for me, my feet were almost gone; my steps had well nigh slipped.</p>
 
@@ -2218,7 +2218,7 @@
 
 <p id="psa-73:28">But it is good for me to draw near to God: I have put my trust in the Lord GOD, that I may declare all thy works.</p>
 
-<p id="psa-74:1"><Maschil of Asaph.> O God, why hast thou cast us off for ever? why doth thine anger smoke against the sheep of thy pasture?</p>
+<p id="psa-74:1">O God, why hast thou cast us off for ever? why doth thine anger smoke against the sheep of thy pasture?</p>
 
 <p id="psa-74:2">Remember thy congregation, which thou hast purchased of old; the rod of thine inheritance, which thou hast redeemed; this mount Zion, wherein thou hast dwelt.</p>
 
@@ -2264,7 +2264,7 @@
 
 <p id="psa-74:23">Forget not the voice of thine enemies: the tumult of those that rise up against thee increaseth continually.</p>
 
-<p id="psa-75:1"><To the chief Musician, Altaschith, A Psalm or Song of Asaph.> Unto thee, O God, do we give thanks, unto thee do we give thanks: for that thy name is near thy wondrous works declare.</p>
+<p id="psa-75:1">Unto thee, O God, do we give thanks, unto thee do we give thanks: for that thy name is near thy wondrous works declare.</p>
 
 <p id="psa-75:2">When I shall receive the congregation I will judge uprightly.</p>
 
@@ -2284,7 +2284,7 @@
 
 <p id="psa-75:10">All the horns of the wicked also will I cut off; but the horns of the righteous shall be exalted.</p>
 
-<p id="psa-76:1"><To the chief Musician on Neginoth, A Psalm or Song of Asaph.> In Judah is God known: his name is great in Israel.</p>
+<p id="psa-76:1">In Judah is God known: his name is great in Israel.</p>
 
 <p id="psa-76:2">In Salem also is his tabernacle, and his dwelling place in Zion.</p>
 
@@ -2308,7 +2308,7 @@
 
 <p id="psa-76:12">He shall cut off the spirit of princes: he is terrible to the kings of the earth.</p>
 
-<p id="psa-77:1"><To the chief Musician, to Jeduthun, A Psalm of Asaph.> I cried unto God with my voice, even unto God with my voice; and he gave ear unto me.</p>
+<p id="psa-77:1">I cried unto God with my voice, even unto God with my voice; and he gave ear unto me.</p>
 
 <p id="psa-77:2">In the day of my trouble I sought the Lord: my sore ran in the night, and ceased not: my soul refused to be comforted.</p>
 
@@ -2348,7 +2348,7 @@
 
 <p id="psa-77:20">Thou leddest thy people like a flock by the hand of Moses and Aaron.</p>
 
-<p id="psa-78:1"><Maschil of Asaph.> Give ear, O my people, to my law: incline your ears to the words of my mouth.</p>
+<p id="psa-78:1">Give ear, O my people, to my law: incline your ears to the words of my mouth.</p>
 
 <p id="psa-78:2">I will open my mouth in a parable: I will utter dark sayings of old:</p>
 
@@ -2492,7 +2492,7 @@
 
 <p id="psa-78:72">So he fed them according to the integrity of his heart; and guided them by the skilfulness of his hands.</p>
 
-<p id="psa-79:1"><A Psalm of Asaph.> O God, the heathen are come into thine inheritance; thy holy temple have they defiled; they have laid Jerusalem on heaps.</p>
+<p id="psa-79:1">O God, the heathen are come into thine inheritance; thy holy temple have they defiled; they have laid Jerusalem on heaps.</p>
 
 <p id="psa-79:2">The dead bodies of thy servants have they given to be meat unto the fowls of the heaven, the flesh of thy saints unto the beasts of the earth.</p>
 
@@ -2518,7 +2518,7 @@
 
 <p id="psa-79:13">So we thy people and sheep of thy pasture will give thee thanks for ever: we will shew forth thy praise to all generations.</p>
 
-<p id="psa-80:1"><To the chief Musician upon Shoshannimeduth, A Psalm of Asaph.> Give ear, O Shepherd of Israel, thou that leadest Joseph like a flock; thou that dwellest between the cherubims, shine forth.</p>
+<p id="psa-80:1">Give ear, O Shepherd of Israel, thou that leadest Joseph like a flock; thou that dwellest between the cherubims, shine forth.</p>
 
 <p id="psa-80:2">Before Ephraim and Benjamin and Manasseh stir up thy strength, and come and save us.</p>
 
@@ -2556,7 +2556,7 @@
 
 <p id="psa-80:19">Turn us again, O LORD God of hosts, cause thy face to shine; and we shall be saved.</p>
 
-<p id="psa-81:1"><To the chief Musician upon Gittith, A Psalm of Asaph.> Sing aloud unto God our strength: make a joyful noise unto the God of Jacob.</p>
+<p id="psa-81:1">Sing aloud unto God our strength: make a joyful noise unto the God of Jacob.</p>
 
 <p id="psa-81:2">Take a psalm, and bring hither the timbrel, the pleasant harp with the psaltery.</p>
 
@@ -2588,7 +2588,7 @@
 
 <p id="psa-81:16">He should have fed them also with the finest of the wheat: and with honey out of the rock should I have satisfied thee.</p>
 
-<p id="psa-82:1"><A Psalm of Asaph.> God standeth in the congregation of the mighty; he judgeth among the gods.</p>
+<p id="psa-82:1">God standeth in the congregation of the mighty; he judgeth among the gods.</p>
 
 <p id="psa-82:2">How long will ye judge unjustly, and accept the persons of the wicked? Selah.</p>
 
@@ -2604,7 +2604,7 @@
 
 <p id="psa-82:8">Arise, O God, judge the earth: for thou shalt inherit all nations.</p>
 
-<p id="psa-83:1"><A Song or Psalm of Asaph.> Keep not thou silence, O God: hold not thy peace, and be not still, O God.</p>
+<p id="psa-83:1">Keep not thou silence, O God: hold not thy peace, and be not still, O God.</p>
 
 <p id="psa-83:2">For, lo, thine enemies make a tumult: and they that hate thee have lifted up the head.</p>
 
@@ -2640,7 +2640,7 @@
 
 <p id="psa-83:18">That men may know that thou, whose name alone is JEHOVAH, art the most high over all the earth.</p>
 
-<p id="psa-84:1"><To the chief Musician upon Gittith, A Psalm for the sons of Korah.> How amiable are thy tabernacles, O LORD of hosts!</p>
+<p id="psa-84:1">How amiable are thy tabernacles, O LORD of hosts!</p>
 
 <p id="psa-84:2">My soul longeth, yea, even fainteth for the courts of the LORD: my heart and my flesh crieth out for the living God.</p>
 
@@ -2664,7 +2664,7 @@
 
 <p id="psa-84:12">O LORD of hosts, blessed is the man that trusteth in thee.</p>
 
-<p id="psa-85:1"><To the chief Musician, A Psalm for the sons of Korah.> LORD, thou hast been favourable unto thy land: thou hast brought back the captivity of Jacob.</p>
+<p id="psa-85:1">LORD, thou hast been favourable unto thy land: thou hast brought back the captivity of Jacob.</p>
 
 <p id="psa-85:2">Thou hast forgiven the iniquity of thy people, thou hast covered all their sin. Selah.</p>
 
@@ -2690,7 +2690,7 @@
 
 <p id="psa-85:13">Righteousness shall go before him; and shall set us in the way of his steps.</p>
 
-<p id="psa-86:1"><A Prayer of David.> Bow down thine ear, O LORD, hear me: for I am poor and needy.</p>
+<p id="psa-86:1">Bow down thine ear, O LORD, hear me: for I am poor and needy.</p>
 
 <p id="psa-86:2">Preserve my soul; for I am holy: O thou my God, save thy servant that trusteth in thee.</p>
 
@@ -2724,7 +2724,7 @@
 
 <p id="psa-86:17">Shew me a token for good; that they which hate me may see it, and be ashamed: because thou, LORD, hast holpen me, and comforted me.</p>
 
-<p id="psa-87:1"><A Psalm or Song for the sons of Korah.> His foundation is in the holy mountains.</p>
+<p id="psa-87:1">His foundation is in the holy mountains.</p>
 
 <p id="psa-87:2">The LORD loveth the gates of Zion more than all the dwellings of Jacob.</p>
 
@@ -2738,7 +2738,7 @@
 
 <p id="psa-87:7">As well the singers as the players on instruments shall be there: all my springs are in thee.</p>
 
-<p id="psa-88:1"><A Song or Psalm for the sons of Korah, to the chief Musician upon Mahalath Leannoth, Maschil of Heman the Ezrahite.> O LORD God of my salvation, I have cried day and night before thee:</p>
+<p id="psa-88:1">O LORD God of my salvation, I have cried day and night before thee:</p>
 
 <p id="psa-88:2">Let my prayer come before thee: incline thine ear unto my cry;</p>
 
@@ -2774,7 +2774,7 @@
 
 <p id="psa-88:18">Lover and friend hast thou put far from me, and mine acquaintance into darkness.</p>
 
-<p id="psa-89:1"><Maschil of Ethan the Ezrahite.> I will sing of the mercies of the LORD for ever: with my mouth will I make known thy faithfulness to all generations.</p>
+<p id="psa-89:1">I will sing of the mercies of the LORD for ever: with my mouth will I make known thy faithfulness to all generations.</p>
 
 <p id="psa-89:2">For I have said, Mercy shall be built up for ever: thy faithfulness shalt thou establish in the very heavens.</p>
 
@@ -2878,7 +2878,7 @@
 
 <p id="psa-89:52">Blessed be the LORD for evermore. Amen, and Amen.</p>
 
-<p id="psa-90:1"><A Prayer of Moses the man of God.> Lord, thou hast been our dwelling place in all generations.</p>
+<p id="psa-90:1">Lord, thou hast been our dwelling place in all generations.</p>
 
 <p id="psa-90:2">Before the mountains were brought forth, or ever thou hadst formed the earth and the world, even from everlasting to everlasting, thou art God.</p>
 
@@ -2944,7 +2944,7 @@
 
 <p id="psa-91:16">With long life will I satisfy him, and shew him my salvation.</p>
 
-<p id="psa-92:1"><A Psalm or Song for the sabbath day.> It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High:</p>
+<p id="psa-92:1">It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High:</p>
 
 <p id="psa-92:2">To shew forth thy lovingkindness in the morning, and thy faithfulness every night,</p>
 
@@ -3102,7 +3102,7 @@
 
 <p id="psa-97:12">Rejoice in the LORD, ye righteous; and give thanks at the remembrance of his holiness.</p>
 
-<p id="psa-98:1"><A Psalm.> O sing unto the LORD a new song; for he hath done marvellous things: his right hand, and his holy arm, hath gotten him the victory.</p>
+<p id="psa-98:1">O sing unto the LORD a new song; for he hath done marvellous things: his right hand, and his holy arm, hath gotten him the victory.</p>
 
 <p id="psa-98:2">The LORD hath made known his salvation: his righteousness hath he openly shewed in the sight of the heathen.</p>
 
@@ -3138,7 +3138,7 @@
 
 <p id="psa-99:9">Exalt the LORD our God, and worship at his holy hill; for the LORD our God is holy.</p>
 
-<p id="psa-100:1"><A Psalm of praise.> Make a joyful noise unto the LORD, all ye lands.</p>
+<p id="psa-100:1">Make a joyful noise unto the LORD, all ye lands.</p>
 
 <p id="psa-100:2">Serve the LORD with gladness: come before his presence with singing.</p>
 
@@ -3148,7 +3148,7 @@
 
 <p id="psa-100:5">For the LORD is good; his mercy is everlasting; and his truth endureth to all generations.</p>
 
-<p id="psa-101:1"><A Psalm of David.> I will sing of mercy and judgment: unto thee, O LORD, will I sing.</p>
+<p id="psa-101:1">I will sing of mercy and judgment: unto thee, O LORD, will I sing.</p>
 
 <p id="psa-101:2">I will behave myself wisely in a perfect way. O when wilt thou come unto me? I will walk within my house with a perfect heart.</p>
 
@@ -3164,7 +3164,7 @@
 
 <p id="psa-101:8">I will early destroy all the wicked of the land; that I may cut off all wicked doers from the city of the LORD.</p>
 
-<p id="psa-102:1"><A Prayer of the afflicted, when he is overwhelmed, and poureth out his complaint before the LORD.> Hear my prayer, O LORD, and let my cry come unto thee.</p>
+<p id="psa-102:1">Hear my prayer, O LORD, and let my cry come unto thee.</p>
 
 <p id="psa-102:2">Hide not thy face from me in the day when I am in trouble; incline thine ear unto me: in the day when I call answer me speedily.</p>
 
@@ -3220,7 +3220,7 @@
 
 <p id="psa-102:28">The children of thy servants shall continue, and their seed shall be established before thee.</p>
 
-<p id="psa-103:1"><A Psalm of David.> Bless the LORD, O my soul: and all that is within me, bless his holy name.</p>
+<p id="psa-103:1">Bless the LORD, O my soul: and all that is within me, bless his holy name.</p>
 
 <p id="psa-103:2">Bless the LORD, O my soul, and forget not all his benefits:</p>
 
@@ -3606,7 +3606,7 @@
 
 <p id="psa-107:43">Whoso is wise, and will observe these things, even they shall understand the lovingkindness of the LORD.</p>
 
-<p id="psa-108:1"><A Song or Psalm of David.> O God, my heart is fixed; I will sing and give praise, even with my glory.</p>
+<p id="psa-108:1">O God, my heart is fixed; I will sing and give praise, even with my glory.</p>
 
 <p id="psa-108:2">Awake, psaltery and harp: I myself will awake early.</p>
 
@@ -3632,7 +3632,7 @@
 
 <p id="psa-108:13">Through God we shall do valiantly: for he it is that shall tread down our enemies.</p>
 
-<p id="psa-109:1"><To the chief Musician, A Psalm of David.> Hold not thy peace, O God of my praise;</p>
+<p id="psa-109:1">Hold not thy peace, O God of my praise;</p>
 
 <p id="psa-109:2">For the mouth of the wicked and the mouth of the deceitful are opened against me: they have spoken against me with a lying tongue.</p>
 
@@ -3694,7 +3694,7 @@
 
 <p id="psa-109:31">For he shall stand at the right hand of the poor, to save him from those that condemn his soul.</p>
 
-<p id="psa-110:1"><A Psalm of David.> The LORD said unto my Lord, Sit thou at my right hand, until I make thine enemies thy footstool.</p>
+<p id="psa-110:1">The LORD said unto my Lord, Sit thou at my right hand, until I make thine enemies thy footstool.</p>
 
 <p id="psa-110:2">The LORD shall send the rod of thy strength out of Zion: rule thou in the midst of thine enemies.</p>
 
@@ -4270,7 +4270,7 @@
 
 <p id="psa-119:176">I have gone astray like a lost sheep; seek thy servant; for I do not forget thy commandments.</p>
 
-<p id="psa-120:1"><A Song of degrees.> In my distress I cried unto the LORD, and he heard me.</p>
+<p id="psa-120:1">In my distress I cried unto the LORD, and he heard me.</p>
 
 <p id="psa-120:2">Deliver my soul, O LORD, from lying lips, and from a deceitful tongue.</p>
 
@@ -4284,7 +4284,7 @@
 
 <p id="psa-120:7">I am for peace: but when I speak, they are for war.</p>
 
-<p id="psa-121:1"><A Song of degrees.> I will lift up mine eyes unto the hills, from whence cometh my help.</p>
+<p id="psa-121:1">I will lift up mine eyes unto the hills, from whence cometh my help.</p>
 
 <p id="psa-121:2">My help cometh from the LORD, which made heaven and earth.</p>
 
@@ -4300,7 +4300,7 @@
 
 <p id="psa-121:8">The LORD shall preserve thy going out and thy coming in from this time forth, and even for evermore.</p>
 
-<p id="psa-122:1"><A Song of degrees of David.> I was glad when they said unto me, Let us go into the house of the LORD.</p>
+<p id="psa-122:1">I was glad when they said unto me, Let us go into the house of the LORD.</p>
 
 <p id="psa-122:2">Our feet shall stand within thy gates, O Jerusalem.</p>
 
@@ -4318,7 +4318,7 @@
 
 <p id="psa-122:9">Because of the house of the LORD our God I will seek thy good.</p>
 
-<p id="psa-123:1"><A Song of degrees.> Unto thee lift I up mine eyes, O thou that dwellest in the heavens.</p>
+<p id="psa-123:1">Unto thee lift I up mine eyes, O thou that dwellest in the heavens.</p>
 
 <p id="psa-123:2">Behold, as the eyes of servants look unto the hand of their masters, and as the eyes of a maiden unto the hand of her mistress; so our eyes wait upon the LORD our God, until that he have mercy upon us.</p>
 
@@ -4326,7 +4326,7 @@
 
 <p id="psa-123:4">Our soul is exceedingly filled with the scorning of those that are at ease, and with the contempt of the proud.</p>
 
-<p id="psa-124:1"><A Song of degrees of David.> If it had not been the LORD who was on our side, now may Israel say;</p>
+<p id="psa-124:1">If it had not been the LORD who was on our side, now may Israel say;</p>
 
 <p id="psa-124:2">If it had not been the LORD who was on our side, when men rose up against us:</p>
 
@@ -4342,7 +4342,7 @@
 
 <p id="psa-124:8">Our help is in the name of the LORD, who made heaven and earth.</p>
 
-<p id="psa-125:1"><A Song of degrees.> They that trust in the LORD shall be as mount Zion, which cannot be removed, but abideth for ever.</p>
+<p id="psa-125:1">They that trust in the LORD shall be as mount Zion, which cannot be removed, but abideth for ever.</p>
 
 <p id="psa-125:2">As the mountains are round about Jerusalem, so the LORD is round about his people from henceforth even for ever.</p>
 
@@ -4352,7 +4352,7 @@
 
 <p id="psa-125:5">As for such as turn aside unto their crooked ways, the LORD shall lead them forth with the workers of iniquity: but peace shall be upon Israel.</p>
 
-<p id="psa-126:1"><A Song of degrees.> When the LORD turned again the captivity of Zion, we were like them that dream.</p>
+<p id="psa-126:1">When the LORD turned again the captivity of Zion, we were like them that dream.</p>
 
 <p id="psa-126:2">Then was our mouth filled with laughter, and our tongue with singing: then said they among the heathen, The LORD hath done great things for them.</p>
 
@@ -4364,7 +4364,7 @@
 
 <p id="psa-126:6">He that goeth forth and weepeth, bearing precious seed, shall doubtless come again with rejoicing, bringing his sheaves with him.</p>
 
-<p id="psa-127:1"><A Song of degrees for Solomon.> Except the LORD build the house, they labour in vain that build it: except the LORD keep the city, the watchman waketh but in vain.</p>
+<p id="psa-127:1">Except the LORD build the house, they labour in vain that build it: except the LORD keep the city, the watchman waketh but in vain.</p>
 
 <p id="psa-127:2">It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: for so he giveth his beloved sleep.</p>
 
@@ -4374,7 +4374,7 @@
 
 <p id="psa-127:5">Happy is the man that hath his quiver full of them: they shall not be ashamed, but they shall speak with the enemies in the gate.</p>
 
-<p id="psa-128:1"><A Song of degrees.> Blessed is every one that feareth the LORD; that walketh in his ways.</p>
+<p id="psa-128:1">Blessed is every one that feareth the LORD; that walketh in his ways.</p>
 
 <p id="psa-128:2">For thou shalt eat the labour of thine hands: happy shalt thou be, and it shall be well with thee.</p>
 
@@ -4386,7 +4386,7 @@
 
 <p id="psa-128:6">Yea, thou shalt see thy children's children, and peace upon Israel.</p>
 
-<p id="psa-129:1"><A Song of degrees.> Many a time have they afflicted me from my youth, may Israel now say:</p>
+<p id="psa-129:1">Many a time have they afflicted me from my youth, may Israel now say:</p>
 
 <p id="psa-129:2">Many a time have they afflicted me from my youth: yet they have not prevailed against me.</p>
 
@@ -4402,7 +4402,7 @@
 
 <p id="psa-129:8">Neither do they which go by say, The blessing of the LORD be upon you: we bless you in the name of the LORD.</p>
 
-<p id="psa-130:1"><A Song of degrees.> Out of the depths have I cried unto thee, O LORD.</p>
+<p id="psa-130:1">Out of the depths have I cried unto thee, O LORD.</p>
 
 <p id="psa-130:2">Lord, hear my voice: let thine ears be attentive to the voice of my supplications.</p>
 
@@ -4418,7 +4418,7 @@
 
 <p id="psa-130:8">And he shall redeem Israel from all his iniquities.</p>
 
-<p id="psa-131:1"><A Song of degrees of David.> LORD, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me.</p>
+<p id="psa-131:1">LORD, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me.</p>
 
 <p id="psa-131:2">Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child.</p>
 
@@ -4460,13 +4460,13 @@
 
 <p id="psa-132:18">His enemies will I clothe with shame: but upon himself shall his crown flourish.</p>
 
-<p id="psa-133:1"><A Song of degrees of David.> Behold, how good and how pleasant it is for brethren to dwell together in unity!</p>
+<p id="psa-133:1">Behold, how good and how pleasant it is for brethren to dwell together in unity!</p>
 
 <p id="psa-133:2">It is like the precious ointment upon the head, that ran down upon the beard, even Aaron's beard: that went down to the skirts of his garments;</p>
 
 <p id="psa-133:3">As the dew of Hermon, and as the dew that descended upon the mountains of Zion: for there the LORD commanded the blessing, even life for evermore.</p>
 
-<p id="psa-134:1"><A Song of degrees.> Behold, bless ye the LORD, all ye servants of the LORD, which by night stand in the house of the LORD.</p>
+<p id="psa-134:1">Behold, bless ye the LORD, all ye servants of the LORD, which by night stand in the house of the LORD.</p>
 
 <p id="psa-134:2">Lift up your hands in the sanctuary, and bless the LORD.</p>
 
@@ -4584,7 +4584,7 @@
 
 <p id="psa-137:9">Happy shall he be, that taketh and dasheth thy little ones against the stones.</p>
 
-<p id="psa-138:1"><A Psalm of David.> I will praise thee with my whole heart: before the gods will I sing praise unto thee.</p>
+<p id="psa-138:1">I will praise thee with my whole heart: before the gods will I sing praise unto thee.</p>
 
 <p id="psa-138:2">I will worship toward thy holy temple, and praise thy name for thy lovingkindness and for thy truth: for thou hast magnified thy word above all thy name.</p>
 
@@ -4600,7 +4600,7 @@
 
 <p id="psa-138:8">The LORD will perfect that which concerneth me: thy mercy, O LORD, endureth for ever: forsake not the works of thine own hands.</p>
 
-<p id="psa-139:1"><To the chief Musician, A Psalm of David.> O LORD, thou hast searched me, and known me.</p>
+<p id="psa-139:1">O LORD, thou hast searched me, and known me.</p>
 
 <p id="psa-139:2">Thou knowest my downsitting and mine uprising, thou understandest my thought afar off.</p>
 
@@ -4648,7 +4648,7 @@
 
 <p id="psa-139:24">And see if there be any wicked way in me, and lead me in the way everlasting.</p>
 
-<p id="psa-140:1"><To the chief Musician, A Psalm of David.> Deliver me, O LORD, from the evil man: preserve me from the violent man;</p>
+<p id="psa-140:1">Deliver me, O LORD, from the evil man: preserve me from the violent man;</p>
 
 <p id="psa-140:2">Which imagine mischiefs in their heart; continually are they gathered together for war.</p>
 
@@ -4674,7 +4674,7 @@
 
 <p id="psa-140:13">Surely the righteous shall give thanks unto thy name: the upright shall dwell in thy presence.</p>
 
-<p id="psa-141:1"><A Psalm of David.> LORD, I cry unto thee: make haste unto me; give ear unto my voice, when I cry unto thee.</p>
+<p id="psa-141:1">LORD, I cry unto thee: make haste unto me; give ear unto my voice, when I cry unto thee.</p>
 
 <p id="psa-141:2">Let my prayer be set forth before thee as incense; and the lifting up of my hands as the evening sacrifice.</p>
 
@@ -4694,7 +4694,7 @@
 
 <p id="psa-141:10">Let the wicked fall into their own nets, whilst that I withal escape.</p>
 
-<p id="psa-142:1"><Maschil of David; A Prayer when he was in the cave.> I cried unto the LORD with my voice; with my voice unto the LORD did I make my supplication.</p>
+<p id="psa-142:1">I cried unto the LORD with my voice; with my voice unto the LORD did I make my supplication.</p>
 
 <p id="psa-142:2">I poured out my complaint before him; I shewed before him my trouble.</p>
 
@@ -4708,7 +4708,7 @@
 
 <p id="psa-142:7">Bring my soul out of prison, that I may praise thy name: the righteous shall compass me about; for thou shalt deal bountifully with me.</p>
 
-<p id="psa-143:1"><A Psalm of David.> Hear my prayer, O LORD, give ear to my supplications: in thy faithfulness answer me, and in thy righteousness.</p>
+<p id="psa-143:1">Hear my prayer, O LORD, give ear to my supplications: in thy faithfulness answer me, and in thy righteousness.</p>
 
 <p id="psa-143:2">And enter not into judgment with thy servant: for in thy sight shall no man living be justified.</p>
 
@@ -4732,7 +4732,7 @@
 
 <p id="psa-143:12">And of thy mercy cut off mine enemies, and destroy all them that afflict my soul: for I am thy servant.</p>
 
-<p id="psa-144:1"><A Psalm of David.> Blessed be the LORD my strength, which teacheth my hands to war, and my fingers to fight:</p>
+<p id="psa-144:1">Blessed be the LORD my strength, which teacheth my hands to war, and my fingers to fight:</p>
 
 <p id="psa-144:2">My goodness, and my fortress; my high tower, and my deliverer; my shield, and he in whom I trust; who subdueth my people under me.</p>
 
@@ -4762,7 +4762,7 @@
 
 <p id="psa-144:15">Happy is that people, that is in such a case: yea, happy is that people, whose God is the LORD.</p>
 
-<p id="psa-145:1"><David's Psalm of praise.> I will extol thee, my God, O king; and I will bless thy name for ever and ever.</p>
+<p id="psa-145:1">I will extol thee, my God, O king; and I will bless thy name for ever and ever.</p>
 
 <p id="psa-145:2">Every day will I bless thee; and I will praise thy name for ever and ever.</p>
 
