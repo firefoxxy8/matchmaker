@@ -9,7 +9,7 @@ if __name__ == '__main__':
         #tokens = line.strip().split('{')[0].split()
         tokens = line.strip().split()
         if len(tokens) >= 3:
-            chunkId = '-'.join(tokens[:2]).lower()
+            chunkId = 'kjv'+'-'.join(tokens[:2]).lower()
             #text = ' '.join(tokens[2:]).replace('[','<i>').replace(']','</i>')
             text = ' '.join(tokens[2:]).replace('[','').replace(']','')
             text = p.sub('', text)

@@ -28,7 +28,7 @@ if __name__ == '__main__':
         logger.info('basedir=%s work=%s label=%s src=%s mdfile=%s dest=%s process=%s'%(basedir, work, label, src, mdfile, dest, not os.path.exists(dest)))
         emrdir = os.path.join(basedir,'emr')
         if not os.path.exists(dest):
-            _execute('echo "# %s" > %s; echo "" >> %s; cat %s | %s >> %s' % (label, mdfile, mdfile, src, os.path.join(srcdir,'prep.py'), mdfile))
+            #_execute('echo "# %s" > %s; echo "" >> %s; cat %s | %s >> %s' % (label, mdfile, mdfile, src, os.path.join(srcdir,'prep.py'), mdfile))
             _execute('cd %s; source /opt/python2/bin/activate; python match_quotes_labsemr.py -c matchmaker_mrjob.conf -r emr --no-output -o s3://ithaka-labs/matchmaker/bible_kjv/matches/%s --work %s s3://ithaka-labs/matchmaker/bible_kjv/extracted-quotes/*; cd %s' % (emrdir, work, mdfile, srcdir))
             _execute('mkdir tmp; aws s3 sync s3://ithaka-labs/matchmaker/bible_kjv/matches/%s/ tmp; aws s3 sync s3://ithaka-labs/matchmaker/bible_kjv/matches/%s/ tmp; cat tmp/part-* > %s; rm -rf tmp' % (work, work, dest))
             _execute('cd ../matchmaker; cat %s | ./metadata.py | ./indexer.py -w bible-%s -v; cd ../emr' % (dest,work))
