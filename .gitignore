@@ -4,3 +4,4 @@ dist
 quotes.pyc
 matches.pyc
 /data
+/.vscode

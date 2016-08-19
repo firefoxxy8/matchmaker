@@ -12,7 +12,7 @@ import traceback
 import json
 import slumber
 
-from labs_cor.db import KyotocabinetDatabase as DB
+from labs_core.db import KyotocabinetDatabase as DB
 
 DEFAULT_API_HOST = 'https://labs.jstor.org'
 FIELDS           = 'article_type,authors,cite,discipline_names,first_page,issue,jcode,journal,keyterms,_keyterms,keyterm_weights,last_page,pubdate,publisher,tags,title,topics,_topics,topic_weights,volume,year'
