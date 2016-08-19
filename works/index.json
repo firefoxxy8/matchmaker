@@ -31,7 +31,7 @@
     "title": "King James Bible - 1Chronicles",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1chronicles.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1chronicles.md",
         "default": true
       }
     }
@@ -41,7 +41,7 @@
     "title": "King James Bible - 1Corinthians",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1corinthians.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1corinthians.md",
         "default": true
       }
     }
@@ -51,7 +51,7 @@
     "title": "King James Bible - 1John",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1john.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1john.md",
         "default": true
       }
     }
@@ -61,7 +61,7 @@
     "title": "King James Bible - 1Kings",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1kings.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1kings.md",
         "default": true
       }
     }
@@ -71,7 +71,7 @@
     "title": "King James Bible - 1Peter",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1peter.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1peter.md",
         "default": true
       }
     }
@@ -81,7 +81,7 @@
     "title": "King James Bible - 1Samuel",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1samuel.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1samuel.md",
         "default": true
       }
     }
@@ -91,7 +91,7 @@
     "title": "King James Bible - 1Thessalonians",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1thessalonians.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1thessalonians.md",
         "default": true
       }
     }
@@ -101,7 +101,7 @@
     "title": "King James Bible - 1Timothy",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/1timothy.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/1timothy.md",
         "default": true
       }
     }
@@ -111,7 +111,7 @@
     "title": "King James Bible - 2Chronicles",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2chronicles.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2chronicles.md",
         "default": true
       }
     }
@@ -121,7 +121,7 @@
     "title": "King James Bible - 2Corinthians",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2corinthians.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2corinthians.md",
         "default": true
       }
     }
@@ -131,7 +131,7 @@
     "title": "King James Bible - 2John",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2john.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2john.md",
         "default": true
       }
     }
@@ -141,7 +141,7 @@
     "title": "King James Bible - 2Kings",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2kings.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2kings.md",
         "default": true
       }
     }
@@ -151,7 +151,7 @@
     "title": "King James Bible - 2Peter",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2peter.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2peter.md",
         "default": true
       }
     }
@@ -161,7 +161,7 @@
     "title": "King James Bible - 2Samuel",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2samuel.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2samuel.md",
         "default": true
       }
     }
@@ -171,7 +171,7 @@
     "title": "King James Bible - 2Thessalonians",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2thessalonians.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2thessalonians.md",
         "default": true
       }
     }
@@ -181,7 +181,7 @@
     "title": "King James Bible - 2Timothy",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/2timothy.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/2timothy.md",
         "default": true
       }
     }
@@ -191,7 +191,7 @@
     "title": "King James Bible - 3John",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/3john.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/3john.md",
         "default": true
       }
     }
@@ -201,7 +201,7 @@
     "title": "King James Bible - Acts",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/acts.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/acts.md",
         "default": true
       }
     }
@@ -211,7 +211,7 @@
     "title": "King James Bible - Amos",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/amos.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/amos.md",
         "default": true
       }
     }
@@ -221,7 +221,7 @@
     "title": "King James Bible - Colossians",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/colossians.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/colossians.md",
         "default": true
       }
     }
@@ -231,7 +231,7 @@
     "title": "King James Bible - Daniel",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/daniel.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/daniel.md",
         "default": true
       }
     }
@@ -241,7 +241,7 @@
     "title": "King James Bible - Deuteronomium",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/deuteronomium.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/deuteronomium.md",
         "default": true
       }
     }
@@ -251,7 +251,7 @@
     "title": "King James Bible - Ecclesiastes",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/ecclesiastes.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/ecclesiastes.md",
         "default": true
       }
     }
@@ -261,7 +261,7 @@
     "title": "King James Bible - Ephesians",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/ephesians.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/ephesians.md",
         "default": true
       }
     }
@@ -271,7 +271,7 @@
     "title": "King James Bible - Ester",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/ester.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/ester.md",
         "default": true
       }
     }
@@ -281,7 +281,7 @@
     "title": "King James Bible - Exodus",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/exodus.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/exodus.md",
         "default": true
       }
     }
@@ -291,7 +291,7 @@
     "title": "King James Bible - Ezechiel",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/ezechiel.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/ezechiel.md",
         "default": true
       }
     }
@@ -301,7 +301,7 @@
     "title": "King James Bible - Ezra",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/ezra.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/ezra.md",
         "default": true
       }
     }
@@ -311,7 +311,7 @@
     "title": "King James Bible - Galateans",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/galateans.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/galateans.md",
         "default": true
       }
     }
@@ -321,7 +321,7 @@
     "title": "King James Bible - Genesis",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/genesis.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/genesis.md",
         "default": true
       }
     }
@@ -331,7 +331,7 @@
     "title": "King James Bible - Habakuk",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/habakuk.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/habakuk.md",
         "default": true
       }
     }
@@ -341,7 +341,7 @@
     "title": "King James Bible - Haggia",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/haggia.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/haggia.md",
         "default": true
       }
     }
@@ -351,7 +351,7 @@
     "title": "King James Bible - Hebrews",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/hebrews.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/hebrews.md",
         "default": true
       }
     }
@@ -361,7 +361,7 @@
     "title": "King James Bible - Hosea",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/hosea.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/hosea.md",
         "default": true
       }
     }
@@ -371,7 +371,7 @@
     "title": "King James Bible - Isaiah",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/isaiah.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/isaiah.md",
         "default": true
       }
     }
@@ -381,7 +381,7 @@
     "title": "King James Bible - James",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/james.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/james.md",
         "default": true
       }
     }
@@ -391,7 +391,7 @@
     "title": "King James Bible - Jeremia",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/jeremia.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/jeremia.md",
         "default": true
       }
     }
@@ -401,7 +401,7 @@
     "title": "King James Bible - Job",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/job.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/job.md",
         "default": true
       }
     }
@@ -411,7 +411,7 @@
     "title": "King James Bible - Joel",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/joel.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/joel.md",
         "default": true
       }
     }
@@ -421,7 +421,7 @@
     "title": "King James Bible - John",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/john.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/john.md",
         "default": true
       }
     }
@@ -431,7 +431,7 @@
     "title": "King James Bible - Jona",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/jona.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/jona.md",
         "default": true
       }
     }
@@ -441,7 +441,7 @@
     "title": "King James Bible - Joshua",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/joshua.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/joshua.md",
         "default": true
       }
     }
@@ -451,7 +451,7 @@
     "title": "King James Bible - Judas",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/judas.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/judas.md",
         "default": true
       }
     }
@@ -461,7 +461,7 @@
     "title": "King James Bible - Judges",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/judges.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/judges.md",
         "default": true
       }
     }
@@ -471,7 +471,7 @@
     "title": "King James Bible - Lamentations",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/lamentations.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/lamentations.md",
         "default": true
       }
     }
@@ -481,7 +481,7 @@
     "title": "King James Bible - Leviticus",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/leviticus.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/leviticus.md",
         "default": true
       }
     }
@@ -491,7 +491,7 @@
     "title": "King James Bible - Luke",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/luke.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/luke.md",
         "default": true
       }
     }
@@ -501,7 +501,7 @@
     "title": "King James Bible - Malachi",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/malachi.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/malachi.md",
         "default": true
       }
     }
@@ -511,7 +511,7 @@
     "title": "King James Bible - Marc",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/marc.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/marc.md",
         "default": true
       }
     }
@@ -521,7 +521,7 @@
     "title": "King James Bible - Matthew",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/matthew.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/matthew.md",
         "default": true
       }
     }
@@ -531,7 +531,7 @@
     "title": "King James Bible - Mica",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/mica.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/mica.md",
         "default": true
       }
     }
@@ -541,7 +541,7 @@
     "title": "King James Bible - Nahum",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/nahum.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/nahum.md",
         "default": true
       }
     }
@@ -551,7 +551,7 @@
     "title": "King James Bible - Nehemia",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/nehemia.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/nehemia.md",
         "default": true
       }
     }
@@ -561,7 +561,7 @@
     "title": "King James Bible - Numeri",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/numeri.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/numeri.md",
         "default": true
       }
     }
@@ -571,7 +571,7 @@
     "title": "King James Bible - Obadja",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/obadja.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/obadja.md",
         "default": true
       }
     }
@@ -581,7 +581,7 @@
     "title": "King James Bible - Philemon",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/philemon.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/philemon.md",
         "default": true
       }
     }
@@ -591,7 +591,7 @@
     "title": "King James Bible - Philippians",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/philippians.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/philippians.md",
         "default": true
       }
     }
@@ -601,7 +601,7 @@
     "title": "King James Bible - Proverbs",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/proverbs.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/proverbs.md",
         "default": true
       }
     }
@@ -611,7 +611,7 @@
     "title": "King James Bible - Psalms",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/psalms.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/psalms.md",
         "default": true
       }
     }
@@ -621,7 +621,7 @@
     "title": "King James Bible - Revelations",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/revelations.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/revelations.md",
         "default": true
       }
     }
@@ -631,7 +631,7 @@
     "title": "King James Bible - Romans",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/romans.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/romans.md",
         "default": true
       }
     }
@@ -641,7 +641,7 @@
     "title": "King James Bible - Ruth",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/ruth.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/ruth.md",
         "default": true
       }
     }
@@ -651,7 +651,7 @@
     "title": "King James Bible - Songofsongs",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/songofsongs.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/songofsongs.md",
         "default": true
       }
     }
@@ -661,7 +661,7 @@
     "title": "King James Bible - Titus",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/titus.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/titus.md",
         "default": true
       }
     }
@@ -671,7 +671,7 @@
     "title": "King James Bible - Zecharia",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/zecharia.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/zecharia.md",
         "default": true
       }
     }
@@ -681,7 +681,7 @@
     "title": "King James Bible - Zephania",
     "versions": {
       "default": {
-        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/zephania.md",
+        "url": "https://raw.githubusercontent.com/JSTOR-Labs/matchmaker/master/works/bible_kjv/markdown/zephania.md",
         "default": true
       }
     }
