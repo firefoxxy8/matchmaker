@@ -1,7 +1,7 @@
 '''
 	EMR job that extracts inline and block quotes from JSTOR documents with text coordinates.
 
-	Run example:  python extract_quotes_labsemr.py -c matchmaker_mrjob.conf -r emr --named-passages XXXX ---no-output s3://ithaka-labs/matchmaker/XXXX/docids -o s3://ithaka-labs/matchmaker/XXXX/extracted-quotes
+	Run example:  python extract_quotes_labsemr.py -c matchmaker_mrjob.conf -r emr --named-passages XXXX --no-output s3://ithaka-labs/matchmaker/XXXX/docids -o s3://ithaka-labs/matchmaker/XXXX/extracted-quotes
 
 '''
 
