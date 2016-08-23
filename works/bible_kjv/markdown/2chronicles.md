@@ -1,5 +1,3 @@
-# 2Chronicles
-
 <p id="kjv2ch-1:1">And Solomon the son of David was strengthened in his kingdom, and the LORD his God was with him, and magnified him exceedingly.</p>
 
 <p id="kjv2ch-1:2">Then Solomon spake unto all Israel, to the captains of thousands and of hundreds, and to the judges, and to every governor in all Israel, the chief of the fathers.</p>

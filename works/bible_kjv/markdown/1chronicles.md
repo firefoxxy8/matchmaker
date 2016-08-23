@@ -1,5 +1,3 @@
-# 1Chronicles
-
 <p id="kjv1ch-1:1">Adam, Sheth, Enosh,</p>
 
 <p id="kjv1ch-1:2">Kenan, Mahalaleel, Jered,</p>
