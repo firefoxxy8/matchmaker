@@ -1,0 +1,66 @@
+<div class="container-fluid" style="padding-left:0;padding-right:0;">
+
+    <div class="row">
+
+        <div class="col-xs-12 col-md-6">
+            <div ng-repeat="group in root.children">
+
+                <div class="item-stable" ng-class="{active: isGroupShown(group)}">
+                    <div class="row heading vertical-align">
+                        <div class="col-xs-1" ng-click="toggleGroup(group)" ng-bind-html="isGroupShown(group) ? '-' : '+'"></div>
+                        <div class="col-xs-10" ng-click="toggleGroup(group)">{{ group.label }}</div>
+                        <div class="col-xs-1 text-right quote-count" ng-click="showArticles(group.id)">{{ group.num_quotes | number }}</div>
+                    </div>
+                </div>
+
+                <div class="section-inner" ng-repeat="section in group.children" ng-show="isGroupShown(group)" ng-class="{active: isSectionShown(section)}">
+                    <div class="row heading vertical-align">
+                        <div class="col-xs-1" ng-click="toggleSection(section)" ng-bind-html="isSectionShown(section) ? '-' : '+'"></div>
+                        <div class="col-xs-10" ng-click="toggleSection(section)">{{ section.label }}</div>
+                        <div class="col-xs-1 text-right quote-count" ng-click="showArticles(section.id)">{{ section.num_quotes | number }}</div>
+                    </div>
+
+                    <div class="section-accordion" ng-repeat="chunk in section.children track by $index" ng-show="isSectionShown(section)">
+                        <div class="row vertical-align" ng-click="showArticles(chunk.id)">
+                            <div class="col-xs-1" ng-bind-html="chunk.id.split('-')[2]"></div>
+                            <div class="col-xs-11 verse" ng-bind-html="chunk.text"></div>
+                            <div class="col-xs-1 text-right quote-count">{{ chunk.num_quotes | number }}</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-6">
+            <div resize style="height:{{windowHeight-100}}px;overflow-y:auto;">
+                <div ng-repeat="article in articles" class="article-result">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col text-left col-top article_title">
+                                <!-- <a href="#/app/article/{{ article.docid.replace('/','|') }}|1|0">{{article.title}}</a> -->
+                                <a href="{{article.stableURL}}">{{article.title}}</a>
+                            </div>
+                            <div class="inset">
+                                <p class="article_authors"> {{article.authors}} </p>
+
+                                <p class="article_citation">
+                                    <span class="article_journal">{{article.journal}}</span><span ng-if="article.journal">, </span>{{article.pubyear}}
+                                </p>
+
+                                <p class="article_keywords">{{article.merged}}</p>
+                            </div>
+                            <div class="snippet-list">
+                                <div ng-repeat="match in article.matches" class="item-text-wrap snippet-item">
+                                    <p class="article_snippet snippet" ng-click="articleViewerModal(match.matchid)">...<span ng-bind-html="match.snippet.small"></span>...</p>
+                                    <!-- <a class="article_snippet snippet" href="{{article.stableURL}}?seq={{match.snippet.page}}">...<span ng-bind-html="match.snippet.small"></span>...</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

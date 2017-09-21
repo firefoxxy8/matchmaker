@@ -378,7 +378,8 @@ angular.module('matchmakerApp')
             var url = $rootScope.apiBaseURL + '/matchmaker/?work=' + work +
                 '&similarity=[' + $rootScope.minSimilarity / 100 + '+TO+*]' +
                 '&match_size=[' + $rootScope.minMatchSize + '+TO+*]' +
-                '&facet=chunk_ids.10000,docid[unique]';
+                '&facet=chunk_ids.10000,docid[unique]' +
+                '&jwt=' + $rootScope.tempApiToken;
 
             $http.get(url, {headers: {'Authorization': 'JWT ' + $rootScope.tempApiToken}}).then(
                 function (response) {
