@@ -380,7 +380,7 @@ angular.module('matchmakerApp')
                 '&match_size=[' + $rootScope.minMatchSize + '+TO+*]' +
                 '&facet=chunk_ids.10000,docid[unique]';
 
-            $http.get(url, {headers: {'Authorization': 'JWT ' + token}}).then(
+            $http.get(url, {headers: {'Authorization': 'JWT ' + $rootScope.tempApiToken}}).then(
                 function (response) {
                     var quoteCounts = {};
                     for (var i = 0; i < response.data.facets.chunk_ids.values.length; i++) {
