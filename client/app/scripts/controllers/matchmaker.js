@@ -315,7 +315,7 @@ angular.module('matchmakerApp')
             for (var pageSeq = 0; pageSeq < results.data.length; pageSeq++) {
                 var scaledHeight = scaledWidth/results.data[pageSeq].width * results.data[pageSeq].height;
                 var imageData = {
-                    url: 'http://' + $rootScope.apiHost + results.data[pageSeq].url + '?token=' + $rootScope.tempApiToken,
+                    url: 'http://' + $rootScope.apiHost + results.data[pageSeq].url + '?jwt=' + $rootScope.tempApiToken,
                     type: results.data[pageSeq].type,
                     imageWidth: results.data[pageSeq].width,
                     imageHeight: results.data[pageSeq].height,

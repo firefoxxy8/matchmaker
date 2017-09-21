@@ -50,7 +50,7 @@ angular
         $rootScope.apiBaseURL = 'http://' + $rootScope.apiHost + '/api';
         $rootScope.apiToken = null;  // This is loaded on initial request
 
-        $rootScope.tempApiToken = 'af6d34103eed942eaa1cce4f77fd1031af514b65';
+        $rootScope.tempApiToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImxhYnNkZW1vIiwiZXhwIjoxODA4NzI1MDEwLCJsYWJzX2FkbWluIjpmYWxzZSwibGFic19ncm91cHMiOlsiYXJ0X2FwaSIsImltYWdlX2FuYWx5emVyIiwiaW1hZ2VzX2FwaSIsIm1ldGFkYXRhX2FwaSIsInJlY29tbWVuZGF0aW9uc19hcGkiLCJzZWFyY2hfYXBpIiwic29scl9hcGkiXX0.wz-yFwALzrdqrfyRCx76o8KXvN1kZuIHLfjbKa1sGLw';
 
     })
 
